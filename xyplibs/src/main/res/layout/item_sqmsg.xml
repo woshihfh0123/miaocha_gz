@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/my15dp"
+    android:paddingRight="@dimen/my15dp"
+    android:paddingTop="@dimen/my15dp"
+    >
+    <View
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my35dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="顺丰到付"
+        android:textSize="@dimen/my16dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/colorBlack"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="各位同仁"
+        android:layout_marginTop="@dimen/my15dp"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/my13dp"/>
+    <TextView
+        android:layout_marginTop="@dimen/my5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="           发了肯德基了方式点击发方式点击发方式点击发方式点击发方式点击发方式点击发方式点击发方式点击发了肯德基了方式点击发了肯德基了方式点击发了肯德基了方式点击发了肯德基了方式点击发了肯德基了方式点击发了肯德基了方式点击发了肯德基了方式点击发了肯德基了方式点击发了肯德基了方式点击发了肯德基了方式点击发了肯德基了方式点击发了肯德基了方式点击发了肯德基了方式点击发了肯德基了方式点击发了肯德基了方式点击发了肯德基了方式点击"        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/my13dp"/>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/my25dp"
+        android:padding="@dimen/my5dp"
+        android:gravity="center"
+        android:layout_gravity="center_vertical|right"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="@dimen/my50dp"
+            android:layout_height="@dimen/my50dp"
+            android:src="@drawable/def"
+            android:tint="@color/colorRed"
+            android:layout_centerInParent="true"/>
+        <TextView
+            android:id="@+id/tv_fbdw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/my13dp"
+            android:paddingRight="@dimen/my5dp"
+            android:text="酸辣粉机了书法家酸辣粉机酸辣粉"/>
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_below="@id/tv_fbdw"
+            android:layout_width="wrap_content"
+            android:paddingTop="@dimen/my15dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/my13dp"
+            android:text="2018.10.20 "/>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/view_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/my65dp"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my83dp"
+        android:background="@mipmap/sh_waitting"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/order_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="等待处理"
+            android:textColor="#ffffffff"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my63dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/my16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="退款金额"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tk_money"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="¥3200.00"
+            android:textStyle="bold"
+            android:textColor="#fff84b3d"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my63dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/my16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="退回我的钱包"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/aready_tk_money"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="¥3200.00"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my85dp"
+        android:background="#F8F8FA"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+        <View
+            android:layout_width="@dimen/my7dp"
+            android:layout_height="@dimen/my7dp"
+            android:background="@drawable/sh_statu" />
+
+        <View
+            android:layout_width="@dimen/my102dp"
+            android:layout_height="@dimen/my2dp"
+            android:background="#4CBF70" />
+
+        <LinearLayout
+            android:layout_width="@dimen/my15dp"
+            android:layout_height="15dp"
+            android:background="@drawable/sh_statu"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/dengdai" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="@dimen/my102dp"
+            android:layout_height="@dimen/my2dp"
+            android:background="#B9B9B9" />
+
+        <View
+            android:id="@+id/view_spot2"
+            android:layout_width="@dimen/my7dp"
+            android:layout_height="@dimen/my7dp"
+            android:background="@drawable/sh_statu_grey" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="提交申请"
+                    android:textColor="#ff666666"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/step1_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2020-05-10  12:40"
+                    android:textColor="#ff999999"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/step2_statu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/my50dp"
+                android:layout_marginRight="@dimen/my50dp"
+                android:text="等待确认"
+                android:textColor="#ff666666"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="退款"
+                    android:textColor="#ff666666"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/step1_time3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2020-05-10  12:40"
+                    android:textColor="#ff999999"
+                    android:textSize="10sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/my48dp"
+    android:background="@color/white"
+    android:text="退款信息"
+    android:textColor="#ff000000"
+    android:textSize="13sp"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/my16dp"
+    />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my109dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/my16dp"
+        android:paddingRight="@dimen/my16dp"
+        android:background="#F8F8FA">
+
+        <ImageView
+            android:id="@+id/goods_pic"
+            android:layout_width="@dimen/my78dp"
+            android:layout_height="@dimen/my78dp"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/my78dp"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/my12dp">
+
+            <TextView
+                android:id="@+id/goods_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="少儿零基础美术培训课少儿零
+基础美术培训课少儿零基础..."
+                android:textColor="#ff333333"
+                android:textSize="13sp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7天无理由退款"
+                android:textColor="#ffff4c36"
+                android:textSize="9sp"
+                android:layout_marginTop="@dimen/my13dp"
+                android:padding="3dp"
+                android:background="@drawable/btn_gold_border"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/my78dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/one_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1200"
+                android:textColor="#ff333333"
+                android:textSize="13sp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                />
+
+            <TextView
+                android:id="@+id/num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="X1"
+                android:textColor="#999999"
+                android:textSize="11sp"
+                android:layout_marginTop="@dimen/my10dp"
+
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/my16dp"
+        android:background="@color/white">
+        <TextView
+            android:id="@+id/tk_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="
+退款原因：  7天无理由退款\n
+退款金额：  3200.00元\n
+申请时间：  2020-05-10  12:40\n
+退款编号：  12334564567"
+            android:textColor="#ff888888"
+            android:textSize="12sp"
+            />
+
+    </LinearLayout>
+</LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#DCDCDC"
+        android:layout_marginBottom="@dimen/my47dp"
+        android:layout_alignParentBottom="true"/>
+    <LinearLayout
+        android:id="@+id/kf_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my45dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:background="@color/white">
+
+
+        <ImageView
+            android:layout_width="@dimen/my26dp"
+            android:layout_height="@dimen/my26dp"
+            android:src="@mipmap/shop_kefu_img"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="联系客服"
+            android:textColor="#ff888888"
+            android:textSize="13sp"
+            android:layout_marginLeft="@dimen/dp_10"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

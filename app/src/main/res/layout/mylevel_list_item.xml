@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/my15dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" android:paddingBottom="@dimen/my10dp"
+    android:paddingTop="@dimen/my10dp">
+
+    <ImageView
+        android:id="@+id/item_img"
+        android:layout_width="@dimen/my20dp"
+        android:layout_height="@dimen/my20dp"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/ledou_img1" />
+
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/item_img"
+        android:paddingLeft="@dimen/my10dp"
+        android:paddingRight="@dimen/my80dp"
+        android:text="邀请新用户注册并实名认证，即可获成长值 即可名认证，即可获成长值"
+        android:textColor="@color/white"
+        android:textSize="@dimen/my13sp" />
+
+    <TextView
+        android:id="@+id/item_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/level_submit_bg"
+        android:paddingLeft="@dimen/my10dp"
+        android:paddingTop="5dp"
+        android:paddingRight="@dimen/my10dp"
+        android:paddingBottom="5dp"
+        android:text="立即邀请"
+        android:textColor="@color/white"
+        android:textSize="@dimen/my12sp" />
+</RelativeLayout>

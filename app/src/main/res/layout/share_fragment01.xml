@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" android:layout_marginTop="@dimen/my20dp"
+    android:padding="@dimen/my10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my100dp"
+        android:background="@drawable/share_bg">
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="@dimen/my50dp"
+            android:layout_height="@dimen/my50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/my30dp"
+            android:src="@mipmap/invital_share_img1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/img1"
+            android:layout_toRightOf="@+id/img1"
+            android:paddingLeft="@dimen/my30dp"
+            android:text="狐音直播 刷视屏赚音豆"
+            android:textColor="@color/white"
+            android:textSize="@dimen/my15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/img1"
+            android:layout_toRightOf="@+id/img1"
+            android:paddingLeft="@dimen/my30dp"
+            android:paddingTop="@dimen/my13dp"
+            android:text="一个有温度的直播平台"
+            android:textColor="#999999"
+            android:textSize="@dimen/my13sp"
+            android:textStyle="normal" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my50dp"
+        android:layout_marginTop="@dimen/my20dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/code_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/my18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/copy_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="复制我的邀请码"
+            android:textColor="@color/white"
+            android:textSize="@dimen/my18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout android:layout_marginTop="@dimen/my20dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my100dp"
+        android:background="@drawable/share_bg1">
+        <TextView
+            android:id="@+id/link_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="#666" android:padding="8dp"
+            android:textSize="@dimen/my17sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my50dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/link_copy"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="复制邀请链接"
+            android:textColor="@color/white"
+            android:textSize="@dimen/my18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</LinearLayout>

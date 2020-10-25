@@ -1,0 +1,761 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mc.phonelive">
+<!--渺茶签名：27491df33c3310d2509909aaf165bde4-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.NETWORK_PROVIDER" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+
+
+        <!--tecent-->
+        <uses-permission android:name="android.permission.INTERNET" />
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+        <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+        <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+        <uses-permission android:name="android.permission.CALL_PHONE" />
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+        <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+        <uses-permission android:name="android.permission.RECORD_AUDIO" />
+        <uses-permission android:name="android.permission.CAMERA" />
+        <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+        <uses-feature android:name="android.hardware.camera" />
+        <uses-feature android:name="android.hardware.camera.autofocus" />
+
+        <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+        <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+        <!-- IMSDK 权限 -->
+        <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+        <uses-permission android:name="android.permission.GET_TASKS" />
+        <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+        <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+        <uses-permission android:name="android.permission.VIBRATE" />
+        <uses-permission android:name="android.permission.WAKE_LOCK" />
+        <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+        <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+        <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+        <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+        <uses-permission android:name="android.permission.BLUETOOTH" />
+
+        <!-- Bugly -->
+        <uses-permission android:name="android.permission.READ_LOGS" />
+
+    <application
+        android:name="com.mc.phonelive.AppContext"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        tools:replace="android:allowBackup,android:icon">
+        <activity
+            android:name="com.mc.phonelive.activity.LauncherActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/launcher">
+            <intent-filter>
+            <action android:name="android.intent.action.MAIN"/>
+            <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mc.phonelive.activity.MainActivity"
+            android:launchMode="singleTask"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" >
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN"/>-->
+<!--                <category android:name="android.intent.category.LAUNCHER"/>-->
+<!--            </intent-filter>-->
+        </activity>
+        <activity
+            android:name="com.mc.phonelive.activity.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.FindPwdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.WebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.EditProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.EditSexActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.EditNameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.EditSignActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.FollowActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.ordertk.MySHApplyTKDetailActivity" />
+        <activity
+            android:name="com.mc.phonelive.activity.FansActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.LiveRecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.ModifyPwdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.ZhangHaoAqActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.VersionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.HeiMingDanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.CenterHmdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.LiveAnchorActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing|stateAlwaysHidden" />
+        <activity
+            android:name="com.mc.phonelive.activity.NewZBActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing|stateAlwaysHidden" />
+        <activity
+            android:name="com.mc.phonelive.activity.LiveAudienceActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing|stateAlwaysHidden" />
+        <activity
+            android:name="com.mc.phonelive.activity.LiveChooseClassActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.LiveAddImpressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.MyImpressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.UserHomeActivity"
+            android:screenOrientation="portrait" android:launchMode="singleTask"/>
+        <activity
+            android:name="com.mc.phonelive.activity.UserHomeActivityMenu"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name="com.mc.phonelive.activity.LiveContributeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.LiveReportActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing|stateAlwaysHidden" />
+        <activity
+            android:name="com.mc.phonelive.activity.MyProfitActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.DianPuMyProfitActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.CashActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.MyCoinActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.ChatActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.ChatRoomActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.SearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.LiveClassActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.LiveRecordPlayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.LoginInvalidActivity"
+            android:theme="@style/dialog2" />
+        <activity
+            android:name="com.mc.phonelive.activity.RecommendActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.ChatChooseImageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.LocationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.LiveGuardListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.SystemMessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.VideoPlayActivity"
+            android:screenOrientation="portrait" android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustNothing|stateAlwaysHidden" />
+        <activity
+            android:name="com.mc.phonelive.activity.VideoRecordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing|stateAlwaysHidden" />
+        <activity
+            android:name="com.mc.phonelive.activity.ZbAndPsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing|stateAlwaysHidden" />
+        <activity
+            android:name="com.mc.phonelive.activity.NewPsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing|stateAlwaysHidden" />
+        <activity
+            android:name="com.mc.phonelive.activity.MainPsAndZb"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing|stateAlwaysHidden" />
+        <activity
+            android:name="com.mc.phonelive.activity.VideoEditActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.VideoPublishActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.VideoChooseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.VideoReportActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.mc.phonelive.activity.MyVideoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.TxlActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.AllShopsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.TypeZbListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.shop.ScoreGoodsInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.shop.ZbGoodsInfoActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.shop.ZbServiceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.shop.TypeMsgListActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.shop.PingLunListActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.shop.GoodsListActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.shop.AtListActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.shop.FunsActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.shop.MsgActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.shop.MoneyPActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.shop.QianDaoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.shop.MyCardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.shop.MyPhotoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.shop.ScoreActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.shop.ScoreOrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.shop.ShopToolsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.shop.ScoreListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.shop.TiXianListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.shop.DianPuTiXianListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.shop.ChongZhiListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.shop.TypeShopsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.ShopsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.SlideTestActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.SecondActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.ErrorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.mc.phonelive.activity.MyShopActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name="com.mc.phonelive.activity.MyShopConditionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.MyShopApplyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.MyShopDetailActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.myShopAddActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.mc.phonelive.activity.RedPackActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/dialog"/>
+        <activity
+            android:name="com.mc.phonelive.activity.LocationGoogleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.jmrtc.JMRTCSendActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.views.shopmall.MyTeamListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.shop.AddressAddActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.shop.MyAddressListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.shop.CartMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.shop.GoodsOrderActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.mc.phonelive.activity.shop.ScoreGoodsOrderActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.mc.phonelive.activity.shop.PayGoodsOrderActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+            <activity
+            android:name="com.mc.phonelive.activity.shop.FoodWritingCommentActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.mc.phonelive.activity.shop.MyOrderDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.shop.PayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.shop.MyOrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.shop.MyMerchantOrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.shop.FansAndGzActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.shop.OrderMyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.shop.YhqActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.shop.MyMerchantOrderDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.shop.OrderDeliveryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.shop.CourierCompanyChoiseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.shop.OrderLogisticsActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.mc.phonelive.activity.shop.MoreCommentListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.shop.MyOrderSearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.shop.ShopMallGoodsSearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mc.phonelive.activity.shop.LeaderboardListActivity"
+            android:screenOrientation="portrait" />
+
+        <!--微信登录回调页面-->
+        <activity
+            android:name="com.mc.phonelive.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!--微信支付回调页面-->
+        <activity
+            android:name="com.mc.phonelive.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name="com.mc.phonelive.activity.shop.MyMerchantOrderSearchActivity" />
+        <activity android:name="com.mc.phonelive.activity.shop.LiveRoomManagementActivity" />
+        <activity android:name="com.mc.phonelive.activity.shop.MyWalletMainActivity" />
+        <activity android:name="com.mc.phonelive.views.shopmall.MyTeamAgentLevelActivity" />
+        <activity android:name="com.mc.phonelive.activity.shop.ShopMallGoodsListActivity" />
+        <activity android:name="com.mc.phonelive.activity.shop.ShopMallMoreMenuListActivity" />
+        <activity android:name="com.mc.phonelive.activity.foxtone.RealNameAuthenticationActivity" />
+        <activity android:name="com.mc.phonelive.activity.foxtone.MusicalCenterActivity" />
+        <activity android:name="com.mc.phonelive.activity.foxtone.SchoolListActivity" />
+        <activity android:name="com.mc.phonelive.activity.foxtone.MyLevelActivity" />
+        <activity android:name="com.mc.phonelive.activity.foxtone.LevelPrivilegeActivity" />
+        <activity android:name="com.mc.phonelive.activity.foxtone.InviteFriendsActivity" />
+        <activity android:name="com.mc.phonelive.activity.foxtone.MyYindouActivity" />
+        <activity android:name="com.mc.phonelive.activity.foxtone.MyYinfenzhiActivity" />
+        <activity android:name="com.mc.phonelive.activity.foxtone.MyShulianduActivity" />
+        <activity android:name="com.mc.phonelive.activity.foxtone.MyTeamActivity" />
+        <activity android:name="com.mc.phonelive.activity.foxtone.MyMessageActivity" />
+        <activity android:name="com.mc.phonelive.activity.foxtone.ClubActivity" />
+        <activity android:name="com.mc.phonelive.activity.foxtone.CreateClubActivity" />
+        <activity android:name="com.mc.phonelive.activity.foxtone.MyClubActivity" />
+        <activity android:name="com.mc.phonelive.activity.foxtone.ClubMemberActivity" />
+        <activity android:name="com.mc.phonelive.activity.foxtone.SearchClubActivity" />
+        <activity android:name="com.mc.phonelive.activity.foxtone.SearchClubMemberActivity" />
+        <activity android:name="com.mc.phonelive.activity.foxtone.AgentApplyActivity" />
+        <activity android:name="com.mc.phonelive.activity.foxtone.CollectionBindingActivity" />
+        <activity android:name="com.mc.phonelive.activity.foxtone.ZhifubaoBindingActivity" />
+        <activity android:name="com.mc.phonelive.activity.foxtone.YinlianBindingActivity" />
+        <activity android:name="com.mc.phonelive.activity.foxtone.CityChoiseActivity" />
+        <activity android:name="com.mc.phonelive.activity.foxtone.TradingCenterActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="com.mc.phonelive.activity.foxtone.AreaAgentTypeActivity" />
+        <activity android:name="com.mc.phonelive.activity.foxtone.SetTransactionPwdActivity" />
+        <activity android:name="com.mc.phonelive.activity.foxtone.TradingBuyToReceivedActivity" />
+        <activity android:name="com.mc.phonelive.activity.foxtone.TradingBuyUpLoadActivity" />
+        <activity android:name="com.mc.phonelive.activity.foxtone.TradingPayconfirmActivity" />
+        <activity android:name="com.mc.phonelive.activity.WebViewAuthenticationActivity" />
+
+
+        <!--腾讯地图定位CDRBZ-TPQ3P-B2WDA-L3GUR-VIPMZ-HHBQW-->
+        <meta-data
+            android:name="TencentMapSDK"
+            android:value="4CTBZ-4HJRP-NBCDE-LVVDA-RED4E-SEFDD" />
+
+        <!-- 腾讯bugly 4CTBZ-4HJRP-NBCDE-LVVDA-RED4E-SEFDD -->
+        <meta-data
+            android:name="BUGLY_APPID"
+            android:value="9542c3c33f" />
+        <meta-data
+            android:name="BUGLY_APP_CHANNEL"
+            android:value="com.mc.phonelive" />
+        <meta-data
+            android:name="BUGLY_ENABLE_DEBUG"
+            android:value="true" />
+        <!-- 腾讯bugly end-->
+
+        <!--谷歌地图-->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" /><!--以嵌入使用该应用编译的Google Play服务版本-->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" /><!--将API密钥从项目gradle.properties文件复制 到字符串值-->
+
+        <!--Android 7.0 拍照要用这个-->
+<!--        <provider-->
+<!--            android:name="android.support.v4.content.FileProvider"-->
+<!--            android:authorities="@string/FILE_PROVIDER"-->
+<!--            android:exported="false"-->
+<!--            android:grantUriPermissions="true">-->
+<!--            <meta-data-->
+<!--                android:name="android.support.FILE_PROVIDER_PATHS"-->
+<!--                android:resource="@xml/file_paths" />-->
+<!--        </provider>-->
+
+        <!--百度语音识别-->
+        <meta-data
+            android:name="com.baidu.speech.APP_ID"
+            android:value="18523533" />
+        <meta-data
+            android:name="com.baidu.speech.API_KEY"
+            android:value="hzA0eYGbDwCSUDkF5ptLrXTR" />
+        <meta-data
+            android:name="com.baidu.speech.SECRET_KEY"
+            android:value="lew2dGsYFzWX6Z8jczT8f17fISAh1sdR" />
+
+        <service
+            android:name="com.baidu.speech.VoiceRecognitionService"
+            android:exported="false" />
+
+        <!--百度语音识别end-->
+
+        <!--极光推送-->
+        <!-- Since JCore2.0.0 Required SDK核心功能-->
+        <!-- 这个Service要继承JCommonService -->
+        <service
+            android:name="com.mc.phonelive.PushService"
+            android:process=":pushcore">
+            <intent-filter>
+                <action android:name="cn.jiguang.user.service.action" />
+            </intent-filter>
+        </service>
+        <receiver
+            android:name="com.mc.phonelive.im.JPushReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <action android:name="cn.jpush.android.intent.CONNECTION" />
+
+                <category android:name="com.mc.phonelive" />
+            </intent-filter>
+        </receiver>
+        <!--极光推送 end-->
+
+        <!--友盟统计 5bff3f04b465f52652000b1e-->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5f1a9a5ab4fa6023ce198ebf" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="com.mc.phonelive" />
+        <!--友盟统计 end-->
+
+        <!--Android 9.0移除了apache的HttpClient，而金山sdk中用到了这个，不加这个的话在Android 9.0会崩溃-->
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+
+
+
+
+
+            <!---->
+
+<!--            <activity-->
+<!--                android:name=".tecent.videorecord.TCVideoPreviewActivity"-->
+<!--                android:screenOrientation="portrait">-->
+<!--                    <intent-filter>-->
+<!--                            <action android:name="com.tencent.liteav.demo.videopreview" />-->
+<!--                            <action android:name="android.intent.action.MAIN" />-->
+<!--                            <category android:name="android.intent.category.DEFAULT" />-->
+<!--                    </intent-filter>-->
+<!--            </activity>-->
+
+
+            <activity
+                android:name=".tecent.videochoose.TCPicturePickerActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/PickerActivityTheme" />
+            <activity
+                android:name=".tecent.videochoose.TCVideoPickerActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/PickerActivityTheme" />
+            <activity
+                android:name=".tecent.videorecord.TCVideoFollowRecordActivity"
+                android:launchMode="singleTop"
+                android:screenOrientation="portrait"
+                android:theme="@style/MixRecordActivityTheme"
+                android:windowSoftInputMode="adjustNothing" />
+
+            <activity
+                android:name=".tecent.videorecord.TCVideoRecordActivity"
+                android:launchMode="singleTop"
+                android:screenOrientation="portrait"
+                android:theme="@style/RecordActivityTheme"
+                android:windowSoftInputMode="adjustNothing" />
+
+            <activity
+                android:name=".tecent.videorecord.TCVideoTripleScreenActivity"
+                android:launchMode="singleTop"
+                android:screenOrientation="portrait"
+                android:theme="@style/MixRecordActivityTheme"
+                android:windowSoftInputMode="adjustNothing" />
+
+
+
+            <!-- 消息收发service -->
+            <service
+                android:name="com.tencent.qalsdk.service.QalService"
+                android:exported="false"
+                android:process=":QALSERVICE" />
+            <!-- 消息收发辅助service -->
+            <service
+                android:name="com.tencent.qalsdk.service.QalAssistService"
+                android:exported="false"
+                android:process=":QALSERVICE" />
+            <!-- 离线消息广播接收器 -->
+            <receiver
+                android:name="com.tencent.qalsdk.QALBroadcastReceiver"
+                android:exported="false">
+                    <intent-filter>
+                            <action android:name="com.tencent.qalsdk.broadcast.qal" />
+                    </intent-filter>
+            </receiver>
+            <!-- 系统消息广播接收器 -->
+            <receiver
+                android:name="com.tencent.qalsdk.core.NetConnInfoCenter"
+                android:process=":QALSERVICE">
+                    <intent-filter>
+                            <action android:name="android.intent.action.BOOT_COMPLETED" />
+                    </intent-filter>
+                    <intent-filter>
+                            <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                    </intent-filter>
+                    <intent-filter>
+                            <action android:name="android.intent.action.TIME_SET" />
+                    </intent-filter>
+                    <intent-filter>
+                            <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+                    </intent-filter>
+            </receiver>
+
+<!--            <activity-->
+<!--                android:name="com.tencent.qcloud.xiaoshipin.login.TCLoginActivity"-->
+<!--                android:screenOrientation="portrait"-->
+<!--                android:theme="@style/LoginTheme" />-->
+
+
+
+
+<!--           -->
+<!--            <activity-->
+<!--                android:name=".tecent.videopublish.TCVideoPublisherActivity"-->
+<!--                android:screenOrientation="portrait"-->
+<!--                android:windowSoftInputMode="adjustNothing" />-->
+            <activity
+                android:name="com.tencent.rtmp.video.TXScreenCapture$TXScreenCaptureAssistantActivity"
+                android:theme="@android:style/Theme.Translucent" />
+
+<!--         -->
+            <activity
+                android:name=".tecent.videochoose.TCTripleRecordVideoPickerActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/PickerActivityTheme" />
+            <activity
+                android:name=".tecent.videojoiner.TCPictureJoinActivity"
+                android:theme="@style/PictureTransitionActivityStyle"
+                android:screenOrientation="portrait" />
+            <activity
+                android:name=".tecent.videoeditor.TCVideoCutActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/EditerActivityTheme" />
+            <activity
+                android:name=".tecent.videoeditor.TCVideoEditerActivity"
+                android:launchMode="singleTask"
+                android:screenOrientation="portrait"
+                android:theme="@style/EditerActivityTheme" />
+
+            <activity android:name=".tecent.videoeditor.TCVideoEffectActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/EditerActivityTheme"/>
+
+            <activity android:name=".tecent.videojoiner.TCVideoJoinerActivity"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+            <provider
+                android:name="android.support.v4.content.FileProvider"
+                android:authorities="@string/FILE_PROVIDER"
+                android:exported="false"
+                android:grantUriPermissions="true">
+                    <meta-data
+                        android:name="android.support.FILE_PROVIDER_PATHS"
+                        android:resource="@xml/filepaths" />
+            </provider>
+
+            <uses-library
+                android:name="com.google.android.maps"
+                android:required="false" />
+            <uses-library android:name="android.test.runner" />
+
+
+
+
+    </application>
+
+</manifest>

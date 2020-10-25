@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/btn_close"
+        android:layout_width="@dimen/my30dp"
+        android:layout_height="@dimen/my30dp"
+        android:layout_marginLeft="20dp"
+        android:padding="5dp"
+        android:layout_marginTop="@dimen/my40dp"
+        android:src="@mipmap/icon_live_ready_close"
+        android:tint="@color/white" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp">
+
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/bg_live_ready_location"
+            android:gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="#fff"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:padding="2dp"
+            android:visibility="gone"
+            android:src="@mipmap/icon_live_ready_location" />
+
+
+
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="@dimen/my60dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/btn_camera"
+            android:layout_width="@dimen/my60dp"
+            android:layout_height="@dimen/my50dp"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+
+                android:layout_width="@dimen/my28dp"
+                android:layout_height="@dimen/my28dp"
+                android:padding="3dp"
+                android:src="@mipmap/icon_live_ready_camera" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginTop="@dimen/my2dp"
+                android:text="翻转"
+                android:textSize="@dimen/my12dp"/>
+        </LinearLayout>
+
+        <com.mc.phonelive.custom.DrawableTextView
+            android:id="@+id/btn_beauty"
+            android:layout_width="@dimen/my60dp"
+            android:layout_height="@dimen/my50dp"
+            android:layout_marginTop="@dimen/my10dp"
+            android:gravity="center"
+            android:text="@string/beauty"
+            android:textColor="@color/white"
+            android:textSize="@dimen/my12dp"
+            app:dt_top_drawable="@mipmap/icon_live_beauty_1"
+            app:dt_top_height="@dimen/my22dp"
+            app:dt_top_width="@dimen/my22dp" />
+        <LinearLayout
+            android:id="@+id/btn_dai_huo"
+            android:layout_width="@dimen/my60dp"
+            android:layout_height="@dimen/my50dp"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+
+                android:layout_width="@dimen/my28dp"
+                android:layout_height="@dimen/my28dp"
+                android:padding="3dp"
+                android:src="@mipmap/fj_icc" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginTop="@dimen/my2dp"
+                android:text="带货"
+                android:textSize="@dimen/my12dp"/>
+        </LinearLayout>
+        <com.mc.phonelive.custom.DrawableTextView
+            android:id="@+id/btn_room_type"
+            android:layout_width="@dimen/my60dp"
+            android:layout_height="@dimen/my50dp"
+            android:layout_marginTop="@dimen/my10dp"
+            android:gravity="center"
+            android:text="@string/live_room_type"
+            android:textColor="@color/white"
+            android:textSize="@dimen/my12dp"
+            app:dt_top_drawable="@mipmap/fj_ic"
+            app:dt_top_height="@dimen/my22dp"
+            app:dt_top_width="@dimen/my22dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/my60dp"
+        android:layout_marginRight="@dimen/my60dp"
+        android:paddingTop="@dimen/my30dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+        >
+
+
+            <RelativeLayout
+                android:id="@+id/avatar_group"
+                android:layout_width="@dimen/my55dp"
+                android:layout_height="@dimen/my55dp"
+                android:layout_marginLeft="10dp"
+               android:layout_marginTop="@dimen/my10dp"
+                android:layout_marginBottom="@dimen/my10dp"
+                android:background="@drawable/shape_black_tra"
+               >
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/avatar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    app:riv_corner_radius="7dp" />
+
+                <TextView
+                    android:id="@+id/cover_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    android:textSize="@dimen/my9dp"
+                    android:layout_marginBottom="@dimen/my5dp"
+                    android:text="更换封面"
+                    android:textColor="@color/white" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/avatar_group"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/avatar_group"
+                android:text="显示位置"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/edit_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/my40dp"
+                android:layout_below="@id/title_text"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/avatar_group"
+                android:background="@null"
+                android:hint="请输入直播标题"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/my13dp" />
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/avatar_group"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="21dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/live_share_to"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:visibility="gone"
+                    android:overScrollMode="never" />
+
+            </LinearLayout>
+
+            <com.mc.phonelive.custom.DrawableTextView
+                android:id="@+id/live_class"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/live_class"
+                android:textColor="@color/redlive"
+                android:textSize="14sp"
+                app:dt_right_drawable="@mipmap/icon_arrow_right_3"
+                app:dt_right_height="16dp"
+                app:dt_right_width="16dp" />
+
+
+        </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/shop_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp" android:gravity="center"
+            android:background="@mipmap/live_close_cart_img"
+            android:text="开启购物车" android:paddingLeft="25dp"
+            android:textColor="@color/redlive"
+            android:textSize="13sp" />
+    </RelativeLayout>
+<View
+    android:layout_width="1dp"
+    android:layout_height="0dp"
+    android:layout_weight="1"/>
+
+
+        <TextView
+            android:id="@+id/btn_start_live"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="@dimen/my85dp"
+            android:background="@drawable/login_btn"
+            android:gravity="center"
+            android:text="开始视频直播"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</RelativeLayout>

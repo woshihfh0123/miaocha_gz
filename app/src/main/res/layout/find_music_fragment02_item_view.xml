@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="110dp"-->
+<!--        android:layout_margin="@dimen/my10dp"-->
+<!--        >-->
+<!--        <ImageView-->
+<!--            android:id="@+id/music_bg"-->
+<!--            android:scaleType="fitXY"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="@dimen/my110dp"-->
+<!--            android:src="@mipmap/fudou_top_img"/>-->
+<!--        <TextView-->
+<!--            android:id="@+id/music_name"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="@dimen/my15dp"-->
+<!--            android:layout_marginTop="@dimen/my20sp"-->
+<!--            android:text="长笛"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="@dimen/my15sp"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/music_scale"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--          android:layout_toRightOf="@+id/music_name"-->
+<!--             android:layout_alignBottom="@+id/music_name"-->
+<!--            android:text="(1/1)" android:paddingLeft="5dp"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="@dimen/my13sp"-->
+<!--            android:textStyle="normal" />-->
+<!--        <TextView-->
+<!--            android:id="@+id/music_price"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/music_name"-->
+<!--            android:layout_marginLeft="@dimen/my15dp"-->
+<!--            android:paddingTop="18dp"-->
+<!--            android:text="价格：0音豆"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="@dimen/my13sp"-->
+<!--            android:textStyle="normal" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/music_num"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/music_price"-->
+<!--            android:layout_marginLeft="@dimen/my5dp"-->
+<!--            android:layout_marginTop="3dp"-->
+<!--            android:paddingLeft="10dp"-->
+<!--            android:text="产量：0音豆"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="@dimen/my13sp" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/music_yin_count"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_above="@+id/music_time"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginTop="3dp"-->
+<!--            android:paddingLeft="10dp"-->
+<!--            android:text="音分值：+0"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="@dimen/my13sp" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/music_time"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/music_price"-->
+<!--          android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginTop="3dp"-->
+<!--            android:paddingLeft="10dp"-->
+<!--            android:text="周期：0天"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="@dimen/my13sp" />-->
+
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/music_pay"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_marginTop="@dimen/my15dp"-->
+<!--            android:layout_marginRight="@dimen/my15sp"-->
+<!--            android:background="@drawable/fudou_waite_bg"-->
+<!--            android:text="立即购买" android:visibility="gone"-->
+<!--            android:textColor="@color/redlive"-->
+<!--            android:textSize="@dimen/my13sp" />-->
+<!--        <TextView-->
+<!--            android:id="@+id/music_end_time"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_marginTop="@dimen/my30dp"-->
+<!--            android:layout_marginRight="@dimen/my10sp"-->
+<!--            android:text="剩余周期：0天"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="@dimen/my13sp" />-->
+
+<!--        <TextView android:layout_alignBottom="@+id/music_time"-->
+<!--            android:id="@+id/music_now_count"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--          android:layout_alignParentRight="true"-->
+<!--            android:layout_marginRight="@dimen/my10dp"-->
+<!--             android:layout_marginTop="3dp"-->
+<!--            android:text="当前拥有：0"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="@dimen/my13sp" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/music_"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_marginRight="@dimen/my10dp"-->
+<!--            android:paddingTop="3dp" android:layout_above="@+id/music_time"-->
+<!--            android:text="领取上线：0"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="@dimen/my13sp" />-->
+
+<!--    </RelativeLayout>-->
+</LinearLayout>

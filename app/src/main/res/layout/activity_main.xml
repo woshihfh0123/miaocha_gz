@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_na"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+
+        android:id="@+id/rootView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false">
+
+        <com.mc.phonelive.custom.MyViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:canScroll="false" />
+
+        <!--底部按钮区域-->
+        <FrameLayout
+            android:id="@+id/bottom"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="#cc000000">
+
+            <com.mc.phonelive.custom.TabButtonGroup
+                android:id="@+id/tab_group"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <com.mc.phonelive.custom.TabButton
+
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    app:tbn_checked="true"
+                    app:tbn_icon_size="20dp"
+                    app:tbn_selected_icon="@mipmap/icon_main_home_1"
+                    app:tbn_text_color="#989A98"
+                    app:tbn_text_select_color="#fff"
+                    app:tbn_text_size="16sp"
+                    app:tbn_tip="@string/main_home"
+                    app:tbn_unselected_icon="@mipmap/icon_main_home_0" />
+
+                <com.mc.phonelive.custom.TabButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="65dp"
+                    android:layout_weight="1"
+                    app:tbn_icon_size="20dp"
+                    app:tbn_selected_icon="@mipmap/icon_main_near_1"
+                    app:tbn_text_color="#989A98"
+                    app:tbn_text_select_color="#fff"
+                    app:tbn_text_size="16sp"
+                    app:tbn_tip="家人"
+                    app:tbn_unselected_icon="@mipmap/icon_main_near_0" />
+
+                <com.mc.phonelive.custom.TabButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    app:tbn_icon_size="20dp"
+                    app:tbn_selected_icon="@mipmap/icon_main_list_1"
+                    app:tbn_text_color="#989A98"
+                    app:tbn_text_select_color="#fff"
+                    app:tbn_text_size="16sp"
+                    app:tbn_tip="问医"
+                    app:tbn_unselected_icon="@mipmap/icon_main_list_0" />
+
+                <com.mc.phonelive.custom.TabButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    app:tbn_icon_size="20dp"
+                    app:tbn_selected_icon="@mipmap/icon_main_me_1"
+                    app:tbn_text_color="#989A98"
+                    app:tbn_text_select_color="#fff"
+                    app:tbn_text_size="16sp"
+                    app:tbn_tip="我"
+                    app:tbn_unselected_icon="@mipmap/icon_main_me_0" />
+
+            </com.mc.phonelive.custom.TabButtonGroup>
+
+            <ImageView
+                android:id="@+id/btn_start"
+                android:layout_width="65dp"
+                android:layout_height="@dimen/my50dp"
+                android:layout_gravity="center"
+                android:onClick="mainClick"
+                android:padding="@dimen/my11dp"
+                android:src="@drawable/center_add" />
+        </FrameLayout>
+
+
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/nav"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:fitsSystemWindows="true"
+        android:paddingLeft="@dimen/my10dp"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:menu="@menu/new_menu">
+
+    </android.support.design.widget.NavigationView>
+</android.support.v4.widget.DrawerLayout>

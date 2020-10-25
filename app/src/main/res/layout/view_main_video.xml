@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/video_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.mc.phonelive.custom.MyViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never" />
+
+    <FrameLayout
+        android:id="@+id/top_container"
+        android:layout_width="match_parent"
+        android:layout_height="70dp" />
+
+    <RelativeLayout
+        android:id="@+id/countdowm_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/my80dp"
+        android:layout_marginRight="@dimen/my15sp" />
+    <!--    <RelativeLayout android:visibility="gone"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_alignParentRight="true"-->
+    <!--        android:layout_marginTop="@dimen/my80dp"-->
+    <!--        android:layout_marginRight="@dimen/my15sp">-->
+
+
+    <!--        <com.zhiboshow.phonelive.views.foxtone.CountDownView-->
+    <!--            android:id="@+id/video_countdown"-->
+    <!--            android:layout_width="60dp"-->
+    <!--            android:layout_height="60dp" app:countdownTime="30"-->
+    <!--            app:progressTextColor="@color/transparent"-->
+    <!--            app:ringColor="@color/redlive"-->
+    <!--            app:ringWidth="6"-->
+    <!--            />-->
+    <!--        <ImageView-->
+    <!--            android:layout_width="@dimen/my37sp"-->
+    <!--            android:layout_height="@dimen/my37sp"-->
+    <!--            android:layout_centerInParent="true"-->
+    <!--            android:src="@mipmap/video_endtime_img"-->
+    <!--            android:visibility="visible" />-->
+
+    <!--    </RelativeLayout>-->
+
+</RelativeLayout>

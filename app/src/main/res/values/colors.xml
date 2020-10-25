@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/global</color>
+    <color name="colorPrimaryDark">@color/global</color>
+    <color name="colorAccent">@color/global</color>
+
+    <color name="global">#181822</color>
+    <color name="divider">#999</color>
+    <color name="globalpic">#FF4081</color>
+    <color name="background">@color/gray2</color>
+    <color name="transparent">#00000000</color>
+    <color name="textColor">@color/white</color>
+<!--    <color name="textColor">#323232</color>-->
+    <color name="white">#fff</color>
+    <color name="texblack">#222222</color>
+    <color name="gray1">#969696</color>
+    <color name="gray2">#f5f5f5</color>
+    <color name="gray3">#c8c8c8</color>
+    <color name="gray">#3A3A44</color>
+    <color name="yellow">@color/global</color>
+    <color name="yellow2">@color/global</color>
+    <color name="textColor2">#646464</color>
+    <color name="textColor22">#1d1d1d</color>
+    <color name="red">#ff0000</color>
+    <color name="pk_red">#f03a40</color>
+    <color name="pk_blue">#2a92f7</color>
+    <color name="black1">#e6323232</color>
+    <color name="fense">@color/redlive</color>
+    <color name="danyin">#E3E3DE</color>
+    <color name="shenfen">#f03a40</color>
+    <color name="texprice">#Ec1c24</color>
+    <color name="zise">#ff0e64</color>
+    <color name="zd">@color/global</color>
+    <color name="hs">#ECEC40</color>
+    <color name="yellow1">#FFB527</color>
+    <color name="color80">#33000000</color>
+    <color name="color801">#1d1d1d</color>
+    <color name="black">#000000</color>
+    <color name="redlive">#FF4443</color>
+    <color name="green1">#24ba76</color>
+    <color name="line1">#3C3C3C</color>
+    <color name="FUBColor7">#fd9400</color>
+    <color name="color_switch_red">#ff0e64</color>
+    <color name="color_switch_gray">#D9FFFFFF</color>
+
+    <color name="alpha_05_white">#0DFFFFFF</color>
+    <color name="alpha_10_white">#1AFFFFFF</color>
+    <color name="alpha_15_white">#26FFFFFF</color>
+    <color name="alpha_20_white">#33FFFFFF</color>
+    <color name="alpha_25_white">#40FFFFFF</color>
+    <color name="alpha_30_white">#4DFFFFFF</color>
+    <color name="alpha_35_white">#59FFFFFF</color>
+    <color name="alpha_40_white">#66FFFFFF</color>
+    <color name="alpha_45_white">#73FFFFFF</color>
+    <color name="alpha_50_white">#80FFFFFF</color>
+    <color name="alpha_55_white">#8CFFFFFF</color>
+    <color name="alpha_60_white">#99FFFFFF</color>
+    <color name="alpha_65_white">#A6FFFFFF</color>
+    <color name="alpha_70_white">#B3FFFFFF</color>
+    <color name="alpha_75_white">#BFFFFFFF</color>
+    <color name="alpha_80_white">#CCFFFFFF</color>
+    <color name="alpha_85_white">#D9FFFFFF</color>
+    <color name="alpha_90_white">#E6FFFFFF</color>
+    <color name="alpha_95_white">#F2FFFFFF</color>
+
+    <color name="alpha_05_black">#0D000000</color>
+    <color name="alpha_10_black">#1A000000</color>
+    <color name="alpha_15_black">#26000000</color>
+    <color name="alpha_20_black">#33000000</color>
+    <color name="alpha_25_black">#40000000</color>
+    <color name="alpha_30_black">#4D000000</color>
+    <color name="alpha_35_black">#59000000</color>
+    <color name="alpha_40_black">#66000000</color>
+    <color name="alpha_45_black">#73000000</color>
+    <color name="alpha_50_black">#80000000</color>
+    <color name="alpha_55_black">#8C000000</color>
+    <color name="alpha_60_black">#99000000</color>
+    <color name="alpha_65_black">#A6000000</color>
+    <color name="alpha_70_black">#B3000000</color>
+    <color name="alpha_75_black">#BF000000</color>
+    <color name="alpha_80_black">#CC000000</color>
+    <color name="alpha_85_black">#D9000000</color>
+    <color name="alpha_90_black">#E6000000</color>
+    <color name="alpha_95_black">#F2000000</color>
+
+
+
+    <color name="light_wave">#1FBCB6</color>
+    <color name="light_wave_press">#B2655CE6</color>
+
+    <color name="dark_illusion">#449FF3</color>
+    <color name="dark_illusion_press">#B2006EFF</color>
+
+    <!--5-->
+    <color name="win_shaddow_color">#FF6EA745</color>
+    <color name="win_shaddow_color_press">#CC6EA745</color>
+    <!--6-->
+    <color name="ghost_shaddow_color">#FF47A9B2</color>
+    <color name="ghost_shaddow_color_press">#CC47A9B2</color>
+    <!--7-->
+    <color name="phantom_shaddow_color">#FF4368BC</color>
+    <color name="phantom_shaddow_color_press">#CC4368BC</color>
+    <!--8-->
+    <color name="ghost_color">#FF6A3FC6</color>
+    <color name="ghost_color_press">#CC6A3FC6</color>
+    <!--9-->
+    <color name="lightning_color">#FFC73AD1</color>
+    <color name="lightning_color_press">#CCC73AD1</color>
+    <!--10-->
+    <color name="mirror_color">#FFDB347F</color>
+    <color name="mirror_color_press">#CCDB347F</color>
+    <!--11-->
+    <color name="illusion_color">#FF7F554C</color>
+    <color name="illusion_color_press">#CC7F554C</color>
+
+    <color name="editer_bottom">#1F2531</color>
+    <color name="time_bg_normal">#0accac</color>
+    <color name="time_bg_selected">#AA0ACCAC</color>
+
+    <color name="follow_shot_bg_normal">#ec766a</color>
+    <color name="follow_shot_bg_selected">#ec6455</color>
+
+    <!-- 裁剪范围颜色 -->
+    <color name="colorAccentTransparent30">#B2FF584C</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+</resources>

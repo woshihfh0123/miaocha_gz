@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/my10dp" android:paddingBottom="@dimen/my10dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="@dimen/my10dp"
+                android:background="@mipmap/ledou_top_img">
+
+                <TextView
+                    android:id="@+id/myledou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/my15dp"
+                    android:layout_marginTop="@dimen/my25sp"
+                    android:text="我的乐豆"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/my15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/leddou_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/myledou"
+                    android:layout_marginLeft="@dimen/my15dp"
+                    android:paddingTop="3dp"
+                    android:text="000"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/my25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/leddou_Give"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/my30dp"
+                    android:layout_marginRight="@dimen/my10sp"
+                    android:background="@drawable/ledou_give_bg"
+                    android:text="转赠"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/my15sp" />
+
+                <TextView
+                    android:id="@+id/leddou_method"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/my5dp"
+                    android:padding="10dp"
+                    android:text="如何获取乐豆 >"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/my13sp" />
+
+                <TextView
+                    android:id="@+id/leddou_rule"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="@dimen/my10dp"
+                    android:drawableRight="@mipmap/ledou_rule_img"
+                    android:drawablePadding="3dp"
+                    android:padding="10dp"
+                    android:text="规则"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/my13sp" />
+
+            </RelativeLayout>
+
+            <!--<android.support.v7.widget.CardView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_margin="10dp"-->
+                <!--app:cardCornerRadius="8dp"-->
+                <!--app:cardElevation="2dp">-->
+
+                <LinearLayout android:background="@drawable/card_shape"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/my160dp"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/my20dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="@dimen/my10dp"
+                    android:layout_marginBottom="@dimen/my10dp"
+                    android:layout_marginRight="@dimen/my8dp"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/myqd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/my10dp"
+                            android:layout_marginTop="@dimen/my15sp"
+                            android:text="每日签到"
+                            android:textColor="@color/textColor"
+                            android:textSize="@dimen/my17sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/mysign"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/myqd"
+                            android:layout_marginLeft="@dimen/my10dp"
+                            android:layout_marginTop="@dimen/my3sp"
+                            android:text="已连续签到 "
+                            android:textColor="@color/gray1"
+                            android:textSize="@dimen/my15sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/mysign_days_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/myqd"
+                            android:layout_marginTop="@dimen/my3sp"
+                            android:layout_toRightOf="@+id/mysign"
+                            android:text="0天"
+                            android:textColor="@color/FUBColor7"
+                            android:textSize="@dimen/my15sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/leddou_sign_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="@dimen/my20dp"
+                            android:layout_marginRight="@dimen/my10sp"
+                            android:background="@drawable/ledou_sign_bg"
+                            android:text="签到"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/my15sp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:paddingRight="10dp" android:paddingLeft="5dp">
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/sign_recyclerview"
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            <!--</android.support.v7.widget.CardView>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/my10dp"
+                    android:layout_marginTop="@dimen/my15sp"
+                    android:text="乐豆明细"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/my17sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/my5sp"
+                    android:layout_marginRight="@dimen/my10sp">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/ledou_recyclerview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

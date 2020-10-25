@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_base_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my35dp">
+
+        <!--返回键-->
+        <RelativeLayout
+            android:id="@+id/rl_left_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="@dimen/my10dp"
+            android:paddingRight="@dimen/my10dp">
+
+            <ImageView
+                android:src="@drawable/base_ic_head_back"
+                android:id="@+id/iv_left"
+                android:layout_width="@dimen/my16dp"
+                android:layout_height="@dimen/my16dp"
+                android:tint="@color/black"
+                android:layout_centerInParent="true"
+                />
+
+            <!--左边的文字-->
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_left_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@null"
+                android:gravity="center"
+                android:text="返回"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/my15sp"/>
+        </RelativeLayout>
+
+
+        <!--右边的布局-->
+        <RelativeLayout
+            android:id="@+id/rl_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingLeft="@dimen/my10dp"
+            android:paddingRight="@dimen/my10dp">
+
+            <!--右边的图片-->
+            <ImageView
+                android:id="@+id/iv_right_image"
+                android:layout_width="@dimen/my25dp"
+                android:layout_height="@dimen/my25dp"
+                android:layout_centerInParent="true"/>
+
+
+            <!--右边的文字-->
+            <TextView
+                android:id="@+id/tv_right_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@null"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/my15sp"/>
+        </RelativeLayout>
+
+
+        <!--中间的标题-->
+        <TextView
+            android:id="@+id/tv_center_title"
+            android:layout_width="@dimen/my200dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/my17sp"
+            />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my0.5dp"
+        android:visibility="gone"/>
+</LinearLayout>

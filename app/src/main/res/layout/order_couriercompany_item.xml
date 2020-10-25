@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/my1dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/kuaidi_tv" android:background="@color/white"
+        android:layout_width="match_parent" android:gravity="center_vertical"
+        android:layout_height="@dimen/my50dp" android:padding="@dimen/my10dp"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+</LinearLayout>

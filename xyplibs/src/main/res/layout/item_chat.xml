@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/my15dp"
+    android:background="@color/colorWhite"
+    android:paddingRight="@dimen/my15dp"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/my3dp"
+    android:paddingBottom="@dimen/my3dp">
+    <com.bs.xyplibs.view.MyImageView
+        android:id="@+id/img"
+        android:layout_width="@dimen/my45dp"
+        android:layout_height="@dimen/my45dp"
+        android:scaleType="centerCrop"
+        android:layout_centerVertical="true"
+        android:src="@drawable/img_default"
+        />
+    <TextView
+        android:id="@+id/tv_num"
+        android:layout_toRightOf="@+id/img"
+        android:paddingLeft="@dimen/my15dp"
+        android:layout_width="wrap_content"
+        android:singleLine="true"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/my15dp"
+        android:layout_centerVertical="true"
+        android:text="的杰弗里斯"
+        />
+    <TextView
+        android:id="@+id/tv_yq"
+        android:layout_width="wrap_content"
+        android:singleLine="true"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/my15dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="邀请"
+        android:background="@drawable/org_bt_shape"
+        android:paddingLeft="@dimen/my15dp"
+        android:paddingRight="@dimen/my15dp"
+        android:paddingTop="@dimen/my3dp"
+        android:paddingBottom="@dimen/my3dp"
+        />
+</RelativeLayout>
+
+    <View
+        style="@style/title_bottom_line_style"
+        android:layout_marginLeft="@dimen/my65dp"
+       />
+</LinearLayout>

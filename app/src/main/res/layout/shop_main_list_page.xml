@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<android.support.design.widget.AppBarLayout-->
+        <!--android:id="@+id/appBarLayout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@color/transparent"-->
+        <!--android:fadingEdge="none"-->
+        <!--app:elevation="0dp">-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="38dp"-->
+            <!--android:weightSum="2">-->
+
+            <!--<LinearLayout android:visibility="gone"-->
+                <!--android:id="@+id/type_layout01"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:gravity="center">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/type_tv01"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="类型"-->
+                    <!--android:textColor="@color/textColor"-->
+                    <!--android:textSize="@dimen/my13sp" />-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/type_img01" android:padding="3dp"-->
+                    <!--android:layout_width="@dimen/my18sp"-->
+                    <!--android:layout_height="@dimen/my20sp"-->
+                    <!--android:src="@mipmap/b_icon" />-->
+            <!--</LinearLayout>-->
+
+            <!--<View-->
+                <!--android:layout_width="1dp"-->
+                <!--android:layout_height="@dimen/my20dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:background="#DEDEDE" />-->
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/type_layout02"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:gravity="center">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/type_tv02"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="销量"-->
+                    <!--android:textColor="@color/textColor"-->
+                    <!--android:textSize="@dimen/my13sp" />-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/type_img02"-->
+                    <!--android:padding="3dp"-->
+                    <!--android:layout_width="@dimen/my18sp"-->
+                    <!--android:layout_height="@dimen/my20sp"-->
+                    <!--android:src="@mipmap/b_icon"  />-->
+            <!--</LinearLayout>-->
+
+            <!--<View-->
+                <!--android:layout_width="1dp"-->
+                <!--android:layout_height="@dimen/my20dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:background="#DEDEDE" />-->
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/type_layout03"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:gravity="center">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/type_tv03"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="价格"-->
+                    <!--android:textColor="@color/textColor"-->
+                    <!--android:textSize="@dimen/my13sp" />-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/type_img03"-->
+                    <!--android:padding="3dp"-->
+                    <!--android:layout_width="@dimen/my18sp"-->
+                    <!--android:layout_height="@dimen/my20sp"-->
+                    <!--android:src="@mipmap/b_icon"  />-->
+            <!--</LinearLayout>-->
+        <!--</LinearLayout>-->
+
+    <!--</android.support.design.widget.AppBarLayout>-->
+
+    <!--<View-->
+        <!--android:id="@+id/lines"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@color/background"-->
+        <!--app:layout_behavior="@string/appbar_scrolling_view_behavior" />-->
+
+    <!--<com.zhiboshow.phonelive.custom.RefreshView-->
+        <!--android:id="@+id/refreshView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="@color/gray2" android:padding="5dp"-->
+        <!--app:enableLoadMore="true"-->
+        <!--app:layout="@layout/view_refresh_main_list"-->
+        <!--app:layout_behavior="@string/appbar_scrolling_view_behavior" />-->
+
+</android.support.design.widget.CoordinatorLayout>

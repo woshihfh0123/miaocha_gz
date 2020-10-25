@@ -1,0 +1,37 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+//    buildToolsVersion rootProject.ext.android.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    api rootProject.ext.dependencies["appcompat-v7"]
+    api files('libs/MobCommons-2018.1128.1916.jar')
+    api files('libs/MobTools-2018.1128.1916.jar')
+    api files('libs/SDKWrapper-2018.0801.1824.jar')
+    api files('libs/ShareSDK-Core-3.4.0.jar')
+    api files('libs/ShareSDK-Facebook-3.4.0.jar')
+    api files('libs/ShareSDK-QQ-3.4.0.jar')
+    api files('libs/ShareSDK-QZone-3.4.0.jar')
+    api files('libs/ShareSDK-Twitter-3.4.0.jar')
+    api files('libs/ShareSDK-Wechat-3.4.0.jar')
+    api files('libs/ShareSDK-Wechat-Core-3.4.0.jar')
+    api files('libs/ShareSDK-Wechat-Favorite-3.4.0.jar')
+    api files('libs/ShareSDK-Wechat-Moments-3.4.0.jar')
+
+}

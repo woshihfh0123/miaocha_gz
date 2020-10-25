@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="wrap_content"
+    android:paddingTop="5dp"
+    android:layout_marginLeft="@dimen/my10dp"
+    android:paddingBottom="5dp"
+    android:gravity="center"
+    >
+<com.mc.phonelive.views.MyImageView
+    android:id="@+id/miv"
+    android:layout_width="@dimen/my85dp"
+    android:layout_height="@dimen/my85dp"
+    app:shape="round"
+    app:borderRadius="5dp"
+    android:src="@drawable/default_img"/>
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="@dimen/my85dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:textSize="@dimen/my13dp"
+      android:text="Peald百度"/>
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="@dimen/my85dp"
+        android:layout_height="wrap_content"
+        android:textColor="#f05b4e"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:textSize="@dimen/my13dp"
+        android:layout_marginTop="3dp"
+      android:text="秒杀价:￥128"/>
+</LinearLayout>

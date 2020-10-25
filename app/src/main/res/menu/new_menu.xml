@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:title=""/>
+        <item
+            android:id="@+id/it_ewm"
+            android:icon="@drawable/sz_01"
+            android:iconTint="@color/white"
+
+            android:title="我的二维码">
+            <shape android:shape="rectangle">
+                <solid android:color="#fff" />
+            </shape>
+        </item>
+        <item
+            android:id="@+id/it_qd"
+            android:title="每日签到"
+            android:iconTint="@color/white"
+            android:icon="@drawable/sz_02"/>
+        <item
+            android:id="@+id/it_msg"
+            android:title="我的消息"
+            android:iconTint="@color/white"
+            android:icon="@drawable/sz_03"/>
+        <item
+            android:id="@+id/it_qb"
+            android:title="钱包"
+            android:iconTint="@color/white"
+            android:icon="@drawable/sz_04"/>
+        <item
+            android:id="@+id/it_gwzs"
+            android:title="购物助手"
+            android:iconTint="@color/white"
+            android:icon="@drawable/sz_05" />
+        <item
+            android:id="@+id/it_zbfw"
+            android:title="直播服务"
+            android:iconTint="@color/white"
+            android:icon="@drawable/sz_06" />
+        <item
+            android:id="@+id/it_set"
+            android:title="设置"
+            android:iconTint="@color/white"
+            android:icon="@drawable/sz_07" />
+
+    </group>
+</menu>

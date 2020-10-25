@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/my5dp"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="@dimen/my40dp"
+        android:layout_height="@dimen/my60dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="0dp">
+
+        <LinearLayout
+            android:id="@+id/sign_bg_layout"
+            android:layout_width="@dimen/my40dp"
+            android:layout_height="@dimen/my60dp"
+            android:background="@color/FUBColor7"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/sign_dou_img"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@mipmap/ledou_img1" />
+
+            <TextView
+                android:id="@+id/sign_dou_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="@dimen/my13sp"
+                 />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

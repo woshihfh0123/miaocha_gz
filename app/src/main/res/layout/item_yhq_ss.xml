@@ -1,0 +1,18 @@
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:gravity="center"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/my2dp"
+    android:paddingBottom="@dimen/my2dp"
+    android:id="@+id/tv_name"
+    android:background="@drawable/shape_3org"
+android:paddingLeft="@dimen/my5dp"
+    android:layout_gravity="center_vertical"
+    android:paddingRight="@dimen/my5dp"
+    android:layout_marginRight="@dimen/my5dp"
+    android:text="我是唯爱"
+    android:textSize="10sp"
+    android:textColor="@color/main_orange_color"
+   >
+</TextView>

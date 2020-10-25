@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_title" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my10dp"
+        android:alpha="0.1"
+        android:background="@color/gray1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/my50dp"
+                android:orientation="vertical"
+                android:padding="@dimen/my10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/club_img"
+                        android:layout_width="@dimen/my70dp"
+                        android:layout_height="@dimen/my70dp"
+                        android:layout_marginRight="@dimen/my15sp"
+                        android:src="@drawable/default_img" />
+
+                    <TextView
+                        android:id="@+id/club_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/club_img"
+                        android:paddingTop="5dp"
+                        android:text="英雄联盟大本营"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/my16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/club_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/club_img"
+                        android:layout_toRightOf="@+id/club_img"
+                        android:text="电话：00000000"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/my12sp"
+                        android:textStyle="normal" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/my0.5dp"
+                    android:layout_marginTop="@dimen/my20dp"
+                    android:background="@color/gray1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/my50dp"
+                    android:layout_marginTop="@dimen/my5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="创建人"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/my16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/club_username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="XX"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/my14sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/my0.5dp"
+                    android:layout_marginTop="@dimen/my5dp"
+                    android:background="@color/gray1" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/my50dp"
+                    android:layout_marginTop="@dimen/my5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="俱乐部成员"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/my16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/club_people"
+                        android:layout_width="@dimen/my200dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:drawableRight="@mipmap/right_icon"
+                        android:drawablePadding="5dp"
+                        android:text="0人" android:gravity="right|center_vertical"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/my14sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/my0.5dp"
+                    android:layout_marginTop="@dimen/my5dp"
+                    android:background="@color/gray1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/my50dp"
+                    android:layout_marginTop="@dimen/my5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="邀请成员"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/my16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/club_invite"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:drawableRight="@mipmap/right_icon"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/my16sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/my0.5dp"
+                    android:layout_marginTop="@dimen/my5dp"
+                    android:background="@color/gray1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/my20dp"
+                    android:text="俱乐部简介"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/my16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/club_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/my15dp"
+                    android:lineSpacingExtra="5dp"
+                    android:text="这里是俱乐部简介文字内容这里是俱乐部简介文字内容这里是俱乐部简介文字内容这里是俱乐部简介文字内容这里是俱乐部简介文字内容"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/my14sp" />
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+        <TextView android:id="@+id/club_quit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/my50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/redlive"
+            android:gravity="center"
+            android:text="退出俱乐部"
+            android:textColor="@color/white"
+            android:textSize="@dimen/my14sp" />
+    </RelativeLayout>
+</LinearLayout>

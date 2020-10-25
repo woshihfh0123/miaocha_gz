@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/view_title"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/transparent"
+        android:paddingTop="19dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/titleView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="实名认证"
+                android:textColor="@color/textColor"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:onClick="backClick"
+                android:padding="9dp"
+                android:src="@mipmap/icon_back"
+                android:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/right_View"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/my10dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="跳过"
+                android:textColor="@color/textColor"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/my10dp">
+            <!--step1-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/step1_dian"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/realname_dian"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/my25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/step1_dian"
+                        android:paddingLeft="5dp"
+                        android:text="Step1"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/my17sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/my10dp"
+                    android:text="填写真实姓名和身份证号码"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/my15sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/step1_card_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/my40dp"
+                    android:layout_marginTop="@dimen/my15sp"
+                    android:background="@drawable/realname_edit_bg"
+                    android:hint="请输入您的身份证号"
+                    android:paddingLeft="@dimen/my20dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="#666"
+                    android:textSize="@dimen/my15sp" />
+
+                <EditText
+                    android:id="@+id/step1_realname"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/my40dp"
+                    android:layout_marginTop="@dimen/my15sp"
+                    android:background="@drawable/realname_edit_bg"
+                    android:hint="请输入您的姓名"
+                    android:paddingLeft="@dimen/my20dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="#666"
+                    android:textSize="@dimen/my15sp" />
+            </LinearLayout>
+            <!--step2-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/my30sp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/step2_dian"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/realname_dian"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/my25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/step2_dian"
+                        android:paddingLeft="5dp"
+                        android:text="Step2"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/my17sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/my10dp"
+                    android:text="请使用以上身份实名的支付宝账户进行授权"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/my15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/step2_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/my45dp"
+                    android:layout_marginTop="@dimen/my20sp"
+                    android:background="@drawable/address_submit_bg"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/my10dp"
+                    android:text="前去授权"
+                    android:textColor="@color/white"
+                    android:textColorHint="#666"
+                    android:textSize="@dimen/my15sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="支付宝账户与实名身份不一致将会影响交易"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/my14sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+            <!--step3-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/my30sp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/step3_dian"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/realname_dian"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/my25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/step3_dian"
+                        android:paddingLeft="5dp"
+                        android:text="Step3"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/my17sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/my10dp"
+                    android:text="请支付认证费用完成授权"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/my15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/step3_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/my45dp"
+                    android:layout_marginTop="@dimen/my20sp"
+                    android:background="@drawable/address_submit_bg"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/my10dp"
+                    android:text="前去支付"
+                    android:textColor="@color/white"
+                    android:textColorHint="#666"
+                    android:textSize="@dimen/my15sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:text="请您务必摘下口罩、眼镜等面部物件，并仔细核对信息无误再行提交。"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/my14sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

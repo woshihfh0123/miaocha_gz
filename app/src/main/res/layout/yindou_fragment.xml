@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:padding="@dimen/my10dp">
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/my10dp"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/my10dp">
+
+                <RelativeLayout
+                    android:id="@+id/yindou_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_margin="@dimen/my10dp"
+                    android:background="@mipmap/yindou_bg1">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/my15dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/free_title_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/yindou_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="我的乐豆"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/my15sp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/yindou_tip"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dp"
+                                android:src="@mipmap/yindou_img1" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/yindou_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="3dp"
+                            android:text="0"
+                            android:textColor="@color/white"
+                            android:textSize="40.07sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/my10sp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/yindou_Give"
+                            android:layout_width="@dimen/my80dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/yindou_give_bg"
+                            android:gravity="center"
+                            android:text="转赠"
+                            android:textColor="@color/redlive"
+                            android:textSize="@dimen/my15sp" />
+
+                        <TextView
+                            android:id="@+id/yinpiao_Give"
+                            android:layout_width="@dimen/my80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/my15dp"
+                            android:background="@drawable/yindou_give_bg1"
+                            android:gravity="center"
+                            android:text="转音票"
+                            android:textColor="@color/redlive"
+                            android:textSize="@dimen/my15sp" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/list_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/my10dp"
+                        android:layout_marginTop="@dimen/my15sp">
+                        <View
+                            android:layout_width="3dp"
+                            android:layout_height="@dimen/my17dp"
+                            android:background="@color/redlive"/>
+                        <TextView android:paddingLeft="3dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="明细"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/my18sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/my5sp"
+                        android:layout_marginTop="@dimen/my5dp"
+                        android:layout_marginRight="@dimen/my10sp">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/yindou_recyclerview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+        <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

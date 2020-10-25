@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/my10dp" android:paddingBottom="@dimen/my15dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="@dimen/my10dp"
+                android:background="@mipmap/fudou_top_img">
+
+                <TextView
+                    android:id="@+id/myledou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/my15dp"
+                    android:layout_marginTop="@dimen/my25sp"
+                    android:text="我的福豆"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/my15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/fudou_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/myledou"
+                    android:layout_marginLeft="@dimen/my15dp"
+                    android:paddingTop="3dp"
+                    android:text="000"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/my25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/fudou_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fudou_price"
+                    android:layout_marginLeft="@dimen/my5dp"
+                    android:layout_marginTop="3dp"
+                    android:paddingLeft="10dp"
+                    android:text="可用福豆：0"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/my13sp" />
+
+                <TextView
+                    android:id="@+id/fudou_freeze_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fudou_price"
+                    android:layout_marginLeft="@dimen/my15dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toRightOf="@+id/fudou_num"
+                    android:paddingLeft="10dp"
+                    android:text="冻结福豆：0"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/my13sp" />
+
+
+                <TextView
+                    android:id="@+id/fudou_Give"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/my20dp"
+                    android:layout_marginRight="@dimen/my15sp"
+                    android:background="@drawable/ledou_give_bg"
+                    android:text="转赠"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/my15sp" />
+
+                <TextView
+                    android:id="@+id/fudou_withdraw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fudou_Give"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/my10dp"
+                    android:layout_marginRight="@dimen/my15sp"
+                    android:background="@drawable/fudou_waite_bg"
+                    android:text="提现"
+                    android:textColor="#9652FF"
+                    android:textSize="@dimen/my15sp" />
+
+                <TextView
+                    android:id="@+id/fudou_method"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/my5dp"
+                    android:padding="10dp"
+                    android:text="如何获取福豆 >"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/my13sp" />
+
+                <TextView
+                    android:id="@+id/fudou_rule"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="@dimen/my10dp"
+                    android:drawableRight="@mipmap/ledou_rule_img"
+                    android:drawablePadding="3dp"
+                    android:padding="10dp"
+                    android:text="规则"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/my13sp" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/my10dp"
+                    android:layout_marginTop="@dimen/my15sp"
+                    android:text="福豆明细"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/my17sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/my5sp"
+                    android:layout_marginRight="@dimen/my10sp">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/ledou_recyclerview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

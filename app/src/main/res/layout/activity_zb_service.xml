@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:focusable="true"
+              android:orientation="vertical">
+
+    <include layout="@layout/view_title"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my35dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_margin="@dimen/my20dp"
+        android:background="@drawable/shape_white_3circle"
+        android:paddingLeft="@dimen/my10dp"
+        android:orientation="horizontal">
+<ImageView
+    android:layout_width="@dimen/my15dp"
+    android:layout_height="@dimen/my15dp"
+    android:src="@drawable/icon_search2"/>
+        <com.mc.phonelive.views.ClearEditText
+            android:id="@+id/cet"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/my35dp"
+            android:hint="搜索店铺名称"
+            android:paddingLeft="@dimen/my10dp"
+            android:background="@null"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:textSize="@dimen/my13dp"
+            android:paddingRight="@dimen/my10dp"
+            android:textColor="@color/gray3"/>
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</LinearLayout>

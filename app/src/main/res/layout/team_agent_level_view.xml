@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/view_title"/>
+    <LinearLayout
+        android:layout_width="match_parent" android:orientation="vertical"
+        android:layout_marginTop="@dimen/my10dp" android:background="@color/white"
+        android:layout_height="wrap_content">
+        <RelativeLayout android:padding="@dimen/my10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.mc.phonelive.custom.RatioRoundImageView
+                android:id="@+id/level_user_img"
+                android:layout_width="@dimen/my80dp"
+                android:layout_height="@dimen/my80dp"
+                android:src="@mipmap/user_bg"/>
+            <com.mc.phonelive.custom.RatioRoundImageView
+                android:id="@+id/level_img"
+                android:layout_width="@dimen/my80dp" android:layout_alignParentRight="true"
+                android:layout_height="@dimen/my80dp"
+                android:src="@mipmap/level_pt_img"/>
+                <TextView android:id="@+id/level_user_name" android:text="用户名" android:paddingTop="10dp"
+                    android:layout_width="wrap_content" android:layout_toRightOf="@+id/level_user_img"
+                    android:layout_height="wrap_content" android:paddingLeft="@dimen/my10dp"
+                    android:textSize="@dimen/my17sp" android:textColor="@color/textColor"/>
+                <TextView android:id="@+id/level_user_level" android:text="合伙人"
+                    android:layout_below="@+id/level_user_name" android:paddingTop="10dp"
+                    android:layout_width="wrap_content" android:layout_toRightOf="@+id/level_user_img"
+                    android:layout_height="wrap_content" android:paddingLeft="@dimen/my10dp"
+                    android:textSize="@dimen/my15sp" android:textColor="@color/textColor"/>
+        </RelativeLayout>
+            <TextView android:padding="@dimen/my10dp" android:layout_marginTop="@dimen/my10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black" android:textSize="@dimen/my18dp"
+                android:text="升级规则"/>
+        <android.support.v7.widget.CardView android:layout_margin="@dimen/my10dp"
+            android:layout_width="match_parent" app:cardBackgroundColor="@color/white"
+            android:layout_height="wrap_content"
+            app:cardElevation="3dp" app:cardCornerRadius="8dp">
+
+            <LinearLayout android:orientation="vertical"
+                android:layout_width="match_parent" android:padding="@dimen/my10dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <TextView android:text="当前已完成"
+                    android:textSize="@dimen/my15sp"
+                    android:textColor="@color/textColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView android:text="0"
+                    android:id="@+id/level_num1"
+                    android:textSize="@dimen/my15sp"
+                    android:textColor="@color/redlive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                    <TextView android:text="单，距离"
+                        android:textSize="@dimen/my15sp"
+                        android:textColor="@color/textColor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView android:text="合伙人" android:id="@+id/level_user_level1"
+                        android:textSize="@dimen/my15sp"
+                        android:textColor="@color/textColor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView android:text="还差"
+                        android:textSize="@dimen/my15sp"
+                        android:textColor="@color/textColor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView android:text="0"
+                        android:id="@+id/level_num2"
+                        android:textSize="@dimen/my15sp"
+                        android:textColor="@color/textColor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView android:text="单"
+                        android:textSize="@dimen/my15sp"
+                        android:textColor="@color/textColor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <android.support.v7.widget.RecyclerView
+                    android:paddingTop="@dimen/my20dp"
+                    android:id="@+id/level_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+    <RelativeLayout android:background="@color/white" android:padding="@dimen/my10dp"
+        android:layout_width="match_parent" android:layout_marginTop="@dimen/my50dp"
+        android:layout_height="@dimen/my50dp"
+        android:id="@+id/level_msg">
+        <TextView android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/my15sp"
+            android:text="了解代理权益"/>
+        <ImageView android:layout_centerVertical="true" android:layout_alignParentRight="true"
+            android:layout_width="@dimen/my30dp"
+            android:layout_height="@dimen/my20dp"
+            android:src="@mipmap/right_icon"
+            android:tint="@color/black"/>
+    </RelativeLayout>
+</LinearLayout>

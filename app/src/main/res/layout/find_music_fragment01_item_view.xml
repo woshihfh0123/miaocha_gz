@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/music_cardview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp" app:cardBackgroundColor="@color/transparent"
+        app:cardElevation="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp">
+
+            <ImageView
+                android:id="@+id/music_bg"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/my110dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/fudou_top_img" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/music_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/my15dp"
+                    android:layout_marginTop="@dimen/my20sp"
+                    android:text="长笛"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/my15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/music_scale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/music_name"
+                    android:layout_toRightOf="@+id/music_name"
+                    android:paddingLeft="5dp"
+                    android:text="(1/1)"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/my13sp"
+                    android:textStyle="normal"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/music_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/music_name"
+                    android:layout_marginLeft="@dimen/my15dp"
+                    android:paddingTop="18dp"
+                    android:text="价格：0音豆"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/my13sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/music_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/music_price"
+                    android:layout_marginLeft="@dimen/my5dp"
+                    android:layout_marginTop="3dp"
+                    android:paddingLeft="10dp"
+                    android:text="产量：0音豆"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/my13sp" />
+
+                <TextView
+                    android:id="@+id/music_yin_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/music_cycle"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="3dp"
+                    android:paddingLeft="10dp"
+                    android:text="音分值：+0"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/my13sp" />
+
+                <TextView
+                    android:id="@+id/music_cycle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/music_price"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="3dp"
+                    android:paddingLeft="10dp"
+                    android:text="周期：0天"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/my13sp" />
+
+
+                <TextView
+                    android:id="@+id/music_pay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/my15dp"
+                    android:layout_marginRight="@dimen/my15sp"
+                    android:background="@drawable/fudou_waite_bg"
+                    android:text="立即购买"
+                    android:textColor="@color/redlive"
+                    android:textSize="@dimen/my13sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/music_end_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/my30dp"
+                    android:layout_marginRight="@dimen/my10sp"
+                    android:text="剩余周期：0天"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/my13sp" />
+
+                <TextView
+                    android:id="@+id/music_now_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/music_cycle"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginRight="@dimen/my10dp"
+                    android:text="当前拥有：0"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/my13sp" />
+
+                <TextView
+                    android:id="@+id/music_up_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/music_cycle"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/my10dp"
+                    android:paddingTop="3dp"
+                    android:text="领取上线：0"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/my13sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

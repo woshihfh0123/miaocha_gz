@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorViewBg"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    >
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="@dimen/my20dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/gray_bt_shape"
+        android:paddingLeft="@dimen/my20dp"
+        android:layout_marginBottom="@dimen/my5dp"
+        android:paddingRight="@dimen/my20dp"
+        android:paddingTop="@dimen/my5dp"
+        android:paddingBottom="@dimen/my5dp"
+        android:textSize="@dimen/my12dp"
+        android:text="2019-04-12   10:24"/>
+    <android.support.v7.widget.CardView
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/my10dp"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/my5dp"
+        app:cardElevation="@dimen/my0dp"
+        app:cardPreventCornerOverlap="true"
+        app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"
+            android:paddingTop="@dimen/my10dp"
+            android:paddingBottom="@dimen/my10dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/my15dp"
+                android:paddingRight="@dimen/my15dp"
+                android:ellipsize="end"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/my13dp"
+                android:text="圣诞节福利设计费乐山大佛"
+                />
+            <View style="@style/title_bottom_line_style"
+                android:layout_marginTop="@dimen/my10dp"
+                android:layout_marginBottom="@dimen/my10dp"/>
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/my15dp"
+                android:paddingRight="@dimen/my15dp"
+                android:textColor="@color/colorGray"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/my13dp"
+                android:text="第三方士大夫连接是否"
+                />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

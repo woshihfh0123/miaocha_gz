@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:layout_height="@dimen/my60dp"
+    android:background="@null"
+    android:layout_marginLeft="@dimen/my5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="@dimen/my10dp">
+    <android.support.v7.widget.CardView
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="5dp"
+        app:cardBackgroundColor="#242630"
+        app:cardElevation="@dimen/my1dp"
+        app:cardPreventCornerOverlap="true"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_bj"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my60dp"
+        android:background="@drawable/shape_qb_red"
+       >
+    <LinearLayout
+        android:id="@+id/ll_gd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/my15dp"
+                android:layout_height="@dimen/my15dp"
+                android:src="@drawable/qb_pg" />
+
+            <TextView
+                android:id="@+id/tv_t_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="@dimen/my3dp"
+                android:paddingRight="@dimen/my3dp"
+                android:singleLine="true"
+                android:text="38元菜籽"
+                android:textColor="@color/white"
+                android:textSize="@dimen/my16dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/my2dp"
+            android:textColor="@color/gray3"
+            android:singleLine="true"
+            android:paddingLeft="@dimen/my3dp"
+            android:paddingRight="@dimen/my3dp"
+            android:textSize="@dimen/my12dp"
+            android:gravity="center"
+            android:text="3元"/>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/iv_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/qb_ck2"/>
+        <TextView
+            android:id="@+id/tv_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/my14dp"
+            android:text="输入其他金额"/>
+    </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

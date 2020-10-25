@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--覆盖颜色-->
+    <color name="bgColor_overlay">#60000000</color>
+    <color name="bgColor_overlay1">#60222222</color>
+    <color name="bgColor_overlay2">#ccffffff</color>
+    <!--窗口背景颜色-->
+    <color name="bgColor_alertview_alert">#f8f8f8</color>
+    <color name="bgColor_alertview_alert_start">#f0f0f0</color>
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="lineBlue">#4674e7</color>
+    <!--标题颜色-->
+    <color name="textColor_alert_title">#000000</color>
+    <color name="textColor_actionsheet_title">#8f8f8f</color>
+    <!--消息颜色-->
+    <color name="textColor_alert_msg">#000000</color>
+    <color name="textColor_actionsheet_msg">#8f8f8f</color>
+    <!--线条颜色-->
+    <color name="bgColor_divier">#d7d7db</color>
+    <!--取消按钮颜色-->
+    <color name="textColor_alert_button_cancel">#007aff</color>
+    <!--高亮按钮颜色-->
+    <color name="textColor_alert_button_destructive">#ff3b30</color>
+    <!--普通按钮文字颜色-->
+    <color name="textColor_alert_button_others">#007aff</color>
+    <!--点击颜色-->
+    <color name="bgColor_alert_button_press">#EAEAEA</color>
+    <!--actionsheet模式的取消按钮背景颜色-->
+    <color name="bgColor_actionsheet_cancel_nor">#ffffff</color>
+
+    ///////////
+
+    <color name="ThemeTitleTextcolor">#000000</color>
+    <color name="ThemeTitleBackgroundcolor">#ffffff</color>
+    <color name="colorPrimary">#1D8FFF</color>
+    <color name="colorPrimary1">#4697c2</color>
+    <color name="colorPrimary2">#c2e3f6</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FF0000</color>
+    <color name="colorGreen">#06C1AE</color>
+    <color name="colorGreenFF">#6606C1AE</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorTrans">#FFFFFFFF</color>
+    <color name="colorTrans1">#000000</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorGray">#666666</color>
+    <color name="colorGrayB">#333333</color>
+    <color name="colorGrayWk">#D7D7D7</color>
+    <color name="colorHightGray">#555555</color>
+    <color name="colorHightGray1">#f1f1f1</color>
+    <color name="colorViewBg">#f5f5f5</color>
+    <color name="colorViewBg1">#f5f5f5</color>
+    <color name="colorGrayBg">#E2E2E2</color>
+    <color name="YzcolorBlue">#ff71b9f0</color>
+    <color name="colorOrg">#FFD102</color>
+    <color name="colorOrgLight">#FFFBF0</color>
+    <color name="colorButton">#0c82b9</color>
+    <color name="colorOt">#FF9300</color>
+    <color name="color_232323">#232323</color>
+    <color name="color_8290AF">#8290AF</color>
+    <color name="default_clickable_color">#cccccc</color>
+    <color name="name_selector_color">#cccccc</color>
+    <color name="color_aeaeae">#aeaeae</color>
+    <color name="praise_item_default">#333333</color>
+    <color name="praise_item_selector_default">#cccccc</color>
+    <color name="praise_item">#8290AF</color>
+    <color name="im_social_dig_name_bg">#DDDDDD</color>
+    <color name="im_font_color_text_hint">#abb1b6</color>
+    <color name="im_line_color">#dadada</color>
+    <color name="basic_color_primary">#373b3e</color>
+<!--外卖商家颜色-->
+    <color name="colorBgTabone">#F0EFF4</color>
+    <color name="colorCleTabtwo">#603B3B3B</color>
+    <color name="colorRed">#ff0000</color>
+
+    <color name="dkplayer_theme_color">#39C5BB</color>
+    <color name="dkplayer_theme_color_translucent">#9939C5BB</color>
+    <color name="dkplayer_background_color">#96000000</color>
+<!--外卖商家颜色-->
+    <!---->
+    <color name="cp_colorPrimary">#3F51B5</color>
+    <color name="cp_colorPrimaryDark">#303F9F</color>
+    <color name="cp_colorAccent">#3F51B5</color>
+
+    <color name="cp_color_gray_light">#cdcdcd</color>
+    <color name="cp_color_gray">#999999</color>
+    <color name="cp_color_gray_deep">#666666</color>
+    <color name="cp_color_gray_dark">#333333</color>
+    <color name="cp_color_section_bg">#EDEDED</color>
+    <color name="cp_color_grid_item_bg">#f5f5f5</color>
+    <!---->
+
+    <!--加减控件-->
+    <color name="addsubutils_text">#999</color>
+    <color name="divider">#999</color>
+    <color name="material_amber_200">#FFE082</color>
+    <color name="material_amber_300">#FFD54F</color>
+    <color name="material_amber_400">#FFCA28</color>
+    <color name="material_light_green_200">#C5E1A5</color>
+    <color name="material_light_green_300">#AED581</color>
+    <color name="material_light_green_400">#9CCC65</color>
+    <color name="material_teal_200">#80CBC4</color>
+    <color name="material_teal_300">#4DB6AC</color>
+    <color name="material_teal_400">#26A69A</color>
+    <color name="white">#fff</color>
+    <declare-styleable name="AddSubUtils"><attr format="boolean" name="editable"/><attr format="string" name="location"/><attr format="dimension" name="ImageWidth"/><attr format="dimension" name="contentWidth"/><attr format="dimension" name="contentTextSize"/><attr format="color" name="contentTextColor"/><attr format="color|reference" name="all_background"/><attr format="color|reference" name="leftBackground"/><attr format="color|reference" name="rightBackground"/><attr format="color|reference" name="contentBackground"/><attr format="color|reference" name="leftResources"/><attr format="color|reference" name="rightResources"/></declare-styleable>
+    <dimen name="addsubutils_btn_padding">10dp</dimen>
+    <dimen name="addsubutils_btn_width">30dp</dimen>
+    <dimen name="addsubutils_et_minwidth">65dp</dimen>
+    <dimen name="addsubutils_textsize">15sp</dimen>
+    <style name="item_number_add_sub_style">
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">3dp</item>
+    </style>
+    <!--加减控件-->
+</resources>

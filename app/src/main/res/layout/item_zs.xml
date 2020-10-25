@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_marginTop="@dimen/my15dp"
+    >
+    <com.mc.phonelive.views.MyImageView
+        android:id="@+id/miv"
+        android:layout_width="@dimen/my50dp"
+        android:layout_height="@dimen/my50dp"
+        app:shape="round"
+        app:borderRadius="0dp"
+        android:src="@drawable/default_img"/>
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/my5dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:textSize="@dimen/my13dp"
+        android:text="百度"/>
+
+</LinearLayout>

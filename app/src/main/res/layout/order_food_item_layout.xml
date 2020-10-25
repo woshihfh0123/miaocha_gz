@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10sp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp" app:cardBackgroundColor="@color/white"
+        app:cardElevation="0dp">
+
+        <LinearLayout
+            android:id="@+id/const_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/shop_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:drawableLeft="@mipmap/order_shop_cart_img"
+                    android:drawablePadding="5dp"
+                    android:text="店铺名"
+                    android:textColor="@color/C4"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/foodcart_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white" />
+
+            <LinearLayout android:layout_marginTop="@dimen/my15dp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/my40dp" android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/my40dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="配送方式"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/my15sp" />
+
+                <TextView
+                    android:id="@+id/peisong_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/my10dp"
+                    android:text="普通配送"
+                    android:textColor="@color/textColor2"
+                    android:textSize="@dimen/my15sp" />
+
+                <TextView android:id="@+id/peisong_choise"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="快递  免邮" android:drawablePadding="5dp"
+                    android:gravity="right|center"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+            <LinearLayout android:layout_marginTop="@dimen/my5dp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/my40dp" android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/my40dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="订单备注"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/my15sp" />
+
+                <EditText
+                    android:id="@+id/beizhu_tv" android:layout_marginLeft="@dimen/my5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="@dimen/my10dp"
+                    android:hint="选填，先和商家协商一致"
+                    android:text="" android:paddingRight="@dimen/my10dp"
+                    android:textColor="@color/textColor2"
+                    android:background="@null" android:singleLine="true"
+                    android:textSize="@dimen/my15sp" />
+
+            </LinearLayout>
+            <LinearLayout android:gravity="right|center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/my50dp"
+                android:visibility="gone">
+                <TextView android:id="@+id/food_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"   android:textSize="@dimen/my14sp"
+                    android:text="共0件" android:textColor="@color/gray1"/>
+                <TextView android:paddingLeft="@dimen/my10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:textSize="@dimen/my14sp"
+                    android:text="小计：" android:textColor="@color/black"/>
+
+                <TextView android:id="@+id/shop_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:textSize="@dimen/my14sp"
+                    android:text="￥0" android:textColor="@color/redlive"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="15dp" android:background="@color/C3"/>-->
+</LinearLayout>

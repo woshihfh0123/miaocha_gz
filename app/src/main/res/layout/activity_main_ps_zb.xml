@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    >
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/rl_left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <fragment
+                android:id="@+id/tv_left"
+                android:name="com.mc.phonelive.fragment.LuZhiFragmentPz"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+
+
+        <!--        <TextView-->
+<!--            android:id="@+id/tv_left"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_centerInParent="true"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:text="ldsfdsfsf"/>-->
+
+    </RelativeLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/my50dp"
+    android:orientation="vertical"
+    android:layout_alignParentBottom="true"
+    android:gravity="center">
+    <com.mc.phonelive.views.LocateCenterHorizontalView
+        android:id="@+id/zhouText"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my45dp"
+        android:overScrollMode="never" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my45dp"
+        android:nestedScrollingEnabled="false"
+        android:scrollbars="none"/>
+    <ImageView
+        android:layout_width="5dp"
+        android:layout_height="5dp"
+        android:textSize="@dimen/my80dp"
+        android:textStyle="bold"
+        android:src="@drawable/check_normal"
+       />
+</LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/view_title"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:paddingTop="19dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/titleView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="交易中心"
+                android:textColor="@color/textColor"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:onClick="backClick"
+                android:padding="9dp"
+                android:src="@mipmap/icon_back"
+                android:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/rightView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:paddingLeft="@dimen/my10dp"
+                android:paddingRight="10dp"
+                android:text="交易规则"
+                android:textColor="@color/textColor"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </FrameLayout>
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/view_title"
+        android:background="@color/transparent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            app:layout_behavior="com.mc.phonelive.custom.FixAppBarLayoutBehavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:minHeight="50dp"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/album_dp_10"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/tradingcenter_top_img"
+                        android:orientation="vertical"
+                        android:padding="@dimen/my20sp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/my20sp"
+                            android:paddingTop="@dimen/my20sp"
+                            android:paddingRight="@dimen/my15sp">
+
+                            <TextView
+                                android:id="@+id/top_title_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="音豆"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/my14sp" />
+
+                            <TextView
+                                android:id="@+id/Coin_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/top_title_name"
+                                android:layout_marginTop="@dimen/my20sp"
+                                android:text="0"
+                                android:textColor="@color/white"
+                                android:textSize="27.33sp" />
+
+                            <TextView
+                                android:id="@+id/buy_order_tv"
+                                android:layout_width="86.67dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="@dimen/my10sp"
+                                android:background="@drawable/trading_center_btn_bg"
+                                android:gravity="center"
+                                android:text="挂买单"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/my13sp" />
+
+                            <TextView
+                                android:id="@+id/buy_order_cancle_tv"
+                                android:layout_width="86.67dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/buy_order_tv"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginTop="@dimen/my10dp"
+                                android:layout_marginRight="@dimen/my10sp"
+                                android:background="@drawable/trading_center_btn_bg"
+                                android:gravity="center"
+                                android:text="取消买单"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/my13sp" />
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="@dimen/my20dp"
+                            android:layout_marginTop="@dimen/my20dp"
+                            android:layout_marginRight="@dimen/my20dp"
+                            android:background="@color/white" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/my10dp"
+                            android:weightSum="2">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="今日交易手续费"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/my11sp" />
+
+                                <TextView
+                                    android:id="@+id/hand_fee_tv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/my18sp" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="0.5dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/white" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="今日交易量"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/my11sp" />
+
+                                <TextView
+                                    android:id="@+id/change_count_tv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/my18sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <net.lucode.hackware.magicindicator.MagicIndicator
+                    android:id="@+id/magic_indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="@dimen/my10dp" />
+
+            </LinearLayout>
+        </android.support.design.widget.AppBarLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <View
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#262833"
+                />
+            <android.support.v4.view.ViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+</RelativeLayout>

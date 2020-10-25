@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+
+    android:layout_marginTop="@dimen/my15dp"
+    >
+    <com.mc.phonelive.views.MyImageView
+        android:id="@+id/miv"
+        android:layout_width="@dimen/my75dp"
+        android:layout_height="@dimen/my75dp"
+        app:shape="round"
+        app:borderRadius="0dp"
+        android:src="@drawable/default_img"/>
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#222222"
+        android:layout_marginTop="@dimen/my5dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:textSize="@dimen/my13dp"
+        android:text=""/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="@dimen/my10dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="@dimen/my15dp"
+            android:layout_height="@dimen/my15dp"
+            android:src="@drawable/jf_xtb"/>
+        <TextView
+            android:id="@+id/tv_jf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#EC1C24"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:textSize="@dimen/my14dp"
+            android:text=""/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F40C4A"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/view_title"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/global"
+        android:paddingTop="19dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/titleView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="合伙招募"
+                android:textColor="@color/textColor"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:onClick="backClick"
+                android:padding="9dp"
+                android:src="@mipmap/icon_back"
+                android:tint="@color/white" />
+
+            <TextView android:visibility="gone"
+                android:id="@+id/rightView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:paddingLeft="@dimen/my10dp"
+                android:paddingRight="10dp"
+                android:text="申请记录"
+                android:textColor="@color/textColor"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@mipmap/agent_img" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/my20sp"
+            android:layout_marginTop="@dimen/my30dp"
+            android:gravity="center"
+            android:text="申请城市代理"
+            android:textColor="@color/white"
+            android:textSize="@dimen/my20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/my20sp"
+            android:layout_marginTop="@dimen/my5dp"
+            android:layout_marginBottom="@dimen/my20dp"
+            android:gravity="center"
+            android:text="填写资料审核通过后即可成为代理"
+            android:textColor="@color/white"
+            android:textSize="@dimen/my13sp"
+            android:textStyle="normal" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent" android:layout_marginRight="@dimen/my20dp"
+            android:layout_marginLeft="@dimen/my20dp"
+            android:layout_height="wrap_content" app:cardBackgroundColor="#1E252D"
+            app:cardCornerRadius="5dp" app:cardElevation="0dp">
+
+            <LinearLayout android:layout_marginTop="10dp" android:layout_marginBottom="@dimen/my20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 android:padding="@dimen/my15dp"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/my50dp"
+                    android:layout_marginLeft="@dimen/my40dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <RadioButton
+                        android:id="@+id/btn_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:button="@drawable/city_choise"
+                        android:checked="false"
+                        android:paddingLeft="8dp"
+                        android:text="市级"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/my16sp"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/btn_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:button="@drawable/city_choise"
+                        android:checked="true"
+                        android:paddingLeft="8dp"
+                        android:text="县级"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/my16sp"
+                        android:textStyle="bold" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/address_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/my50dp"
+                    android:layout_marginLeft="@dimen/my15sp"
+                    android:layout_marginTop="@dimen/my30dp"
+                    android:layout_marginRight="@dimen/my15sp"
+                    android:drawableRight="@mipmap/b_icon"
+                    android:gravity="center_vertical"
+                    android:hint="请选择" android:textColorHint="#A4A4A4"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/my18sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="@dimen/my15sp"
+                    android:layout_marginRight="@dimen/my15sp"
+                    android:background="@color/gray1" />
+
+                <TextView
+                    android:id="@+id/apply_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/my45dp"
+                    android:layout_marginLeft="@dimen/my60dp"
+                    android:layout_marginTop="@dimen/my100dp"
+                    android:layout_marginRight="@dimen/my60dp"
+                    android:background="@drawable/address_submit_bg"
+                    android:gravity="center"
+                    android:text="提交"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/my18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

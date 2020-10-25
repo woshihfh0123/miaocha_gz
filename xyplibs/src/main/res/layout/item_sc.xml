@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:jmf="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--            android:src="@drawable/shape_circle_gray_stroke"
+-->
+    <ImageView
+        android:src="@drawable/check_n"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="12dp"
+        app:layout_constraintTop_toTopOf="@id/img_cover"
+        app:layout_constraintBottom_toBottomOf="@id/img_cover"
+        android:id="@+id/img_check"
+        android:layout_width="19dp" android:layout_height="19dp"/>
+    <ImageView
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toRightOf="@id/img_check"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="17dp"
+        android:id="@+id/img_cover"
+        android:layout_width="80dp" android:layout_height="80dp"/>
+
+    <TextView
+        android:layout_marginLeft="11dp"
+        app:layout_constraintTop_toTopOf="@id/img_cover"
+        app:layout_constraintLeft_toRightOf="@id/img_cover"
+        android:text="防晒液SPF50+50ml"
+        android:textColor="#ff4d4d4d"
+        android:textSize="13dp"
+        android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/tv_name"/>
+
+    <TextView
+        android:includeFontPadding="false"
+        app:layout_constraintTop_toTopOf="@id/img_cover"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="12dp"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:text="x1"
+        android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/tv_count"/>
+
+    <TextView
+        android:includeFontPadding="false"
+        android:layout_marginLeft="9dp"
+        app:layout_constraintLeft_toRightOf="@id/img_cover"
+        app:layout_constraintBottom_toBottomOf="@id/img_cover"
+        android:text="¥163.00"
+        android:textColor="#ffff4549"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_price"/>
+
+    <com.bs.xyplibs.AddSubUtils.AddSubUtils
+        android:id="@+id/add_sub_2"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:layout_marginLeft="8dp"
+        android:background="@null"
+        app:layout_constraintBottom_toTopOf="@id/tv_price"
+        app:layout_constraintLeft_toRightOf="@id/img_cover"
+        app:layout_constraintTop_toBottomOf="parent"
+        jmf:ImageWidth="30dp"
+        jmf:contentBackground="@drawable/gray_zj_shape"
+        jmf:contentTextColor="@color/black"
+        jmf:contentTextSize="14sp"
+        jmf:contentWidth="50dp"
+        jmf:editable="true"
+        jmf:leftBackground="@drawable/gray_zj_shape"
+        jmf:rightBackground="@drawable/gray_zj_shape" />
+
+</android.support.constraint.ConstraintLayout>

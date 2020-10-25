@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/my15dp" android:paddingLeft="@dimen/my10dp"
+    android:paddingRight="@dimen/my10dp">
+
+    <RelativeLayout android:layout_marginBottom="@dimen/my15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.mc.phonelive.custom.RatioRoundImageView
+            android:id="@+id/task_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp" android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/my10dp"
+            android:src="@drawable/default_img"
+            app:riv_oval="true" />
+
+        <TextView
+            android:id="@+id/task_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/task_img"
+            android:text="每日观看视频（0/0）"
+            android:textColor="@color/white"
+            android:textSize="@dimen/my13sp" />
+
+        <TextView android:layout_centerVertical="true"
+            android:id="@+id/task_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/address_submit_bg"
+            android:paddingLeft="@dimen/my15dp"
+            android:paddingTop="3dp"
+            android:paddingRight="@dimen/my15dp"
+            android:paddingBottom="5dp"
+            android:text="去完成"
+            android:textColor="@color/white"
+            android:textSize="@dimen/my12sp" />
+
+        <LinearLayout android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/task_img"
+            android:layout_toRightOf="@+id/task_img">
+
+            <TextView
+                android:id="@+id/task_yindou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/task_img"
+                android:drawableLeft="@mipmap/music_task_img1"
+                android:text="音豆+0"
+                android:textColor="#CCCCCC"
+                android:textSize="10.67sp" />
+
+            <TextView
+                android:id="@+id/task_yinfenzhi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/task_img"
+                android:drawableLeft="@mipmap/music_task_img2"
+                android:text="音分值+0"
+                android:textColor="#CCCCCC"
+                android:textSize="10.67sp" />
+
+            <TextView
+                android:id="@+id/task_shuliandu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/my15dp"
+                android:layout_toRightOf="@+id/task_img"
+                android:drawableLeft="@mipmap/music_task_img3"
+                android:text="熟练度+50"
+                android:textColor="#CCCCCC"
+                android:textSize="10.67sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" android:background="@color/line1"/>
+</LinearLayout>

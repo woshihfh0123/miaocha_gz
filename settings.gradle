@@ -1,0 +1,1 @@
+include ':app', ':jpush', ':mob', ':beauty', ':game', ':video', ':mypicturelibrary', ':bannerlib', ':bspopupwindow', ':mylocation', ':ucrop', ':xyplibs', ':picture_library', ':weixinrecorded', ':ugckit', ':beautysettingkit'

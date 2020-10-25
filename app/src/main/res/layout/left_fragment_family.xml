@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/refreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="@dimen/my25dp"
+                        android:gravity="center">
+
+
+                        <ImageView
+                            android:layout_width="@dimen/my16dp"
+                            android:layout_height="@dimen/my16dp"
+                            android:src="@drawable/icon_search2"/>
+                        <com.mc.phonelive.views.ClearEditText
+                            android:id="@+id/cet"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="@dimen/my40dp"
+                            android:imeOptions="actionSearch"
+                            android:paddingLeft="5dp"
+                            android:singleLine="true"
+                            android:hint="搜索用户名字"
+                            android:textSize="@dimen/my14dp"
+                            android:textColor="@color/gray2"
+                            android:textColorHint="@color/gray1"
+                            android:background="@null"
+                            android:textCursorDrawable="@drawable/shape_login_color_cursor"
+                            />
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/my40dp"
+                        android:textColor="@color/gray2"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/my20dp"
+                        android:text="我的家人(互相关注)"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:nestedScrollingEnabled="false"
+                            android:paddingBottom="@dimen/my80dp"
+                            />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+
+
+
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+        <TextView
+            android:id="@+id/tv_noinfo"
+            android:text=""
+            style="@style/gloable_iv_noinfo" />
+    </FrameLayout>
+</LinearLayout>

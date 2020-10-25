@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_marginTop="@dimen/my15sp"
+    android:layout_height="wrap_content" android:orientation="vertical">
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.mc.phonelive.custom.RatioRoundImageView
+        android:id="@+id/privi_img"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/default_img"
+        app:riv_oval="true" />
+
+    <TextView
+        android:id="@+id/privi_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/privi_img"
+        android:paddingLeft="@dimen/my10dp"
+        android:text="普通用户"
+        android:textColor="@color/white"
+        android:textSize="@dimen/my13sp"
+        android:textStyle="bold" />
+
+    <TextView android:layout_below="@+id/privi_title"
+        android:id="@+id/privi_content" android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/privi_img"
+        android:paddingLeft="@dimen/my10dp"
+        android:text="每天可获得收益，不可交易"
+        android:textColor="#999999"
+        android:textSize="@dimen/my11sp"
+        android:textStyle="normal" />
+
+    <View android:layout_below="@+id/privi_content" android:layout_marginTop="@dimen/my15dp"
+        android:layout_width="match_parent"  android:layout_toRightOf="@+id/privi_img"
+        android:layout_height="1dp" android:background="#2A2D3D"/>
+</RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    android:layout_centerVertical="true">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/my15dp"
+    android:paddingRight="@dimen/my15dp"
+    android:paddingTop="@dimen/my10dp"
+    android:paddingBottom="@dimen/my10dp">
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="@dimen/my50dp"
+        android:layout_height="@dimen/my50dp"
+        android:scaleType="centerCrop"
+        android:layout_centerVertical="true"
+        android:src="@drawable/wx_circle"
+        />
+    <LinearLayout
+        android:layout_toRightOf="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/tv_num"
+        android:paddingLeft="10dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/my15dp"
+            android:text="华润万家"
+            />
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_marginTop="@dimen/my5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorGray"
+            android:textSize="@dimen/my12dp"
+            android:text="2019-10-10  09:30:"
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/my15dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="-88"
+        />
+</RelativeLayout>
+
+    <View
+        style="@style/title_bottom_line_style"
+       />
+</LinearLayout>

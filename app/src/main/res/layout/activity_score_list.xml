@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:focusable="true"
+    android:background="#f5f5f5"
+              android:orientation="vertical">
+
+    <include layout="@layout/view_white_title"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my45dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <LinearLayout
+            android:id="@+id/ll_xz"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/my28dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/shape_white_3circle"
+            android:paddingLeft="@dimen/my15dp"
+
+            android:paddingRight="@dimen/my10dp"
+            android:layout_marginLeft="@dimen/my20dp">
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2020-04"
+                android:textSize="13.4sp"
+                android:textColor="#666666"/>
+            <ImageView
+                android:id="@+id/type_img01"
+                android:layout_width="@dimen/my18sp"
+                android:layout_height="@dimen/my20sp"
+                android:padding="3dp"
+                android:src="@mipmap/b_icon" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:id="@+id/lines"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+      />
+
+<com.scwang.smartrefresh.layout.SmartRefreshLayout
+    android:id="@+id/srl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.scwang.smartrefresh.layout.header.ClassicsHeader
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/my10dp"
+       >
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/my5dp"
+            android:paddingRight="@dimen/my5dp"
+            />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_noinfo"
+        android:text=""
+        style="@style/gloable_iv_noinfo" />
+</RelativeLayout>
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

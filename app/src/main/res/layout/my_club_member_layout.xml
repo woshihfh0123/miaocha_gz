@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/view_title"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:paddingTop="19dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/titleView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="俱乐部成员"
+                android:textColor="@color/textColor"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:onClick="backClick"
+                android:padding="9dp"
+                android:src="@mipmap/icon_back"
+                android:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/rightView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:paddingLeft="@dimen/my10dp"
+                android:paddingRight="10dp"
+                android:text="邀请成员"
+                android:textColor="@color/textColor"
+                android:textSize="13sp"
+                android:textStyle="normal" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/my10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/my50dp"
+            android:layout_toLeftOf="@+id/club_search">
+
+            <EditText
+                android:id="@+id/search_edit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/my40dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/club_search_bg"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="搜索成员"
+                android:paddingLeft="@dimen/my40dp"
+                android:paddingRight="@dimen/my30dp"
+                android:singleLine="true"
+                android:textColor="#B4B4B4"
+                android:textColorHint="#B4B4B4"
+                android:textSize="@dimen/my14sp" />
+
+            <ImageView
+                android:id="@+id/club_search_img"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/my10dp"
+                android:padding="8dp"
+                android:src="@mipmap/club_search_img" />
+
+            <ImageView
+                android:id="@+id/club_close_img"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/my5dp"
+                android:padding="8dp"
+                android:src="@mipmap/sld_close"
+                android:tint="#AFAFB1" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/club_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/my10dp"
+            android:paddingLeft="@dimen/my10dp"
+            android:paddingRight="@dimen/my10dp"
+            android:text="搜索"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/my20dp"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/my10dp"
+        android:paddingRight="@dimen/my10dp">
+
+        <TextView
+            android:id="@+id/club_people_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前成员"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/refreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/my10dp">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/club_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <include layout="@layout/no_content_view01" />
+            </RelativeLayout>
+
+            <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+                android:id="@+id/footer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    </LinearLayout>
+
+</LinearLayout>

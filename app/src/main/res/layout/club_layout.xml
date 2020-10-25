@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:focusableInTouchMode="true" android:focusable="true"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/view_title"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:paddingTop="19dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/titleView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="俱乐部"
+                android:textColor="@color/textColor"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:onClick="backClick"
+                android:padding="9dp"
+                android:src="@mipmap/icon_back"
+                android:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/rightView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:paddingLeft="@dimen/my10dp"
+                android:paddingRight="10dp"
+                android:text="创建"
+                android:textColor="@color/textColor"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <RelativeLayout android:id="@+id/edit_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/my10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/my50dp"
+            android:layout_toLeftOf="@+id/club_search">
+
+            <TextView  android:gravity="center_vertical"
+                android:id="@+id/search_edit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/my35dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/club_search_bg"
+                android:hint="搜索俱乐部"
+                android:paddingLeft="@dimen/my40dp"
+                android:paddingRight="@dimen/my30dp"
+                android:singleLine="true"
+                android:textColor="#B4B4B4"
+                android:textColorHint="#B4B4B4"
+                android:textSize="@dimen/my14sp" />
+
+            <ImageView
+                android:id="@+id/club_search_img"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/my10dp"
+                android:padding="8dp"
+                android:src="@mipmap/club_search_img" />
+
+            <ImageView
+                android:id="@+id/club_close_img"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/my5dp"
+                android:padding="8dp"
+                android:src="@mipmap/sld_close"
+                android:tint="#AFAFB1" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/club_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/my10dp"
+            android:paddingLeft="@dimen/my10dp"
+            android:paddingRight="@dimen/my10dp"
+            android:text="搜索"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+    </RelativeLayout>
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout android:id="@+id/myclub_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/my10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="我的俱乐部"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/club_rule"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:alpha="0.5"
+                        android:text="俱乐部规则"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/my10dp"
+                    android:layout_marginRight="@dimen/my10dp"
+                    android:background="@mipmap/club_bg1"
+                    android:padding="@dimen/my10dp">
+
+                    <com.mc.phonelive.custom.RatioRoundImageView
+                        android:id="@+id/club_head_img"
+                        android:layout_width="66.67dp"
+                        android:layout_height="66.67dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/my10dp"
+                        android:src="@drawable/default_img"
+                        app:riv_corner_radius="3dp" />
+
+                    <TextView
+                        android:id="@+id/club_head_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/club_head_img"
+                        android:paddingTop="5dp"
+                        android:text="英雄联盟大本营"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/my16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/club_head_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/club_head_img"
+                        android:text="电话：00000000"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/my12sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/club_head_people"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/club_head_img"
+                        android:layout_toRightOf="@+id/club_head_img"
+                        android:text="人数：0"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/my12sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/club_head_submit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/yindou_give_bg"
+                        android:paddingLeft="@dimen/my25dp"
+                        android:paddingRight="@dimen/my25dp"
+                        android:text="进入"
+                        android:textColor="@color/redlive"
+                        android:textSize="@dimen/my12sp"
+                        android:textStyle="normal" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/my10dp"
+                android:layout_marginTop="@dimen/my20dp"
+                android:layout_marginBottom="@dimen/my10dp"
+                android:alpha="0.1"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/my10dp"
+                android:paddingRight="@dimen/my10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="俱乐部中心"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/club_recyclerview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                        <TextView
+                            android:id="@+id/no_data"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginBottom="8dp" android:layout_marginTop="@dimen/my100dp"
+                            android:text="@string/no_data"
+                            android:textColor="@color/gray1"
+                            android:textSize="14sp"
+                            android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+        <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

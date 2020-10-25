@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_marginLeft="20dp"
+    android:layout_width="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp"
+    android:layout_height="wrap_content">
+    <!-- 首页视频列表头部推荐直播用户-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.mc.phonelive.custom.RatioRoundImageView
+            android:id="@+id/live_userimg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/ic_launcher"
+            app:riv_oval="true"/>
+        <ImageView android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/live_userimg"
+            android:src="@mipmap/live"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="20dp" android:gravity="center">
+        <TextView  android:textStyle="bold"
+            android:layout_width="5dp"
+            android:layout_height="5dp" android:gravity="center_vertical"
+            android:textColor="#FF4A4A" android:text="·"
+             android:background="@drawable/home_live_dian"/>
+        <TextView android:id="@+id/live_username" android:paddingLeft="1dp"
+            android:layout_width="wrap_content" android:singleLine="true"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black" android:text="名称"
+            android:textSize="12sp" android:gravity="center"/>
+    </LinearLayout>
+
+</LinearLayout>

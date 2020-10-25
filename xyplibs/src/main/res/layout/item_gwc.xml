@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:jmf="http://schemas.android.com/tools"
+    android:background="@color/colorWhite"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/my10dp"
+    android:id="@+id/ll_item"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--            android:src="@drawable/shape_circle_gray_stroke"
+-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <ImageView
+        android:src="@drawable/check_y"
+        android:id="@+id/img_check"
+        android:layout_width="@dimen/my50dp"
+        android:layout_height="@dimen/my50dp"
+        android:layout_marginTop="@dimen/my5dp"
+        android:padding="@dimen/my15dp"/>
+    <ImageView
+        android:id="@+id/img_cover"
+        android:layout_width="@dimen/my60dp"
+        android:layout_height="@dimen/my60dp"
+        android:scaleType="centerCrop"
+       />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my60dp"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/my8dp"
+        android:paddingRight="@dimen/my8dp">
+
+        <TextView
+            android:textColor="#ff4d4d4d"
+            android:textSize="@dimen/my13dp"
+            android:maxLines="2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/tv_name"/>
+        <TextView
+            android:includeFontPadding="false"
+            app:layout_constraintLeft_toRightOf="@id/img_cover"
+            app:layout_constraintBottom_toBottomOf="@id/img_cover"
+            android:textColor="#ffff4549"
+            android:textSize="@dimen/my13dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_price"/>
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingRight="@dimen/my8dp"
+    android:paddingLeft="@dimen/my8dp"
+    android:gravity="center_vertical">
+    <TextView
+        android:id="@+id/tv_kc"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/my25dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/my13dp"
+        android:text=""/>
+    <com.bs.xyplibs.AddSubUtils.AddSubUtils
+        android:id="@+id/add_sub_2"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/my22dp"
+        android:background="@null"
+        jmf:contentTextColor="@color/black"
+        jmf:contentTextSize="13dp"
+        jmf:contentWidth="50dp"
+        jmf:editable="true"
+       />
+
+</LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:includeFontPadding="false"
+        app:layout_constraintTop_toTopOf="@id/img_cover"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="12dp"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:text="x1"
+        android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/tv_count"/>
+
+
+    </LinearLayout>
+    <View
+        style="@style/title_bottom_line_style"
+        android:layout_marginTop="@dimen/my10dp"
+        />
+ <!--   -->
+
+</LinearLayout>

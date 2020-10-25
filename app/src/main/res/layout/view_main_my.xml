@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:focusable="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/gameGray">
+    <RelativeLayout
+        android:id="@+id/parallax"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my670dp"
+        android:background="@color/white"
+        android:layout_marginTop="-260dp">
+        <ImageView
+            android:id="@+id/iv_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerInside"
+            android:src="@drawable/screen"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:layout_marginTop="@dimen/my380dp"
+            android:layout_centerHorizontal="true">
+            <ImageView
+                android:id="@+id/iv_pic"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="centerCrop"
+
+                />
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/my5dp"
+                android:layout_below="@id/iv_pic"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/my13dp"
+                android:text="" />
+        </LinearLayout>
+
+    </RelativeLayout>
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlEnableLoadMore="false"
+        app:srlEnableRefresh="false"
+        app:srlEnablePreviewInEditMode="true">
+
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srlAccentColor="@android:color/white"
+            />
+        <android.support.design.widget.CoordinatorLayout
+            android:id="@+id/cly"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <!--
+             app:layout_behavior="com.bs.xyplibs.view.FixAppBarLayoutBehavior"
+            -->
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/abl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                >
+                <android.support.design.widget.CollapsingToolbarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fitsSystemWindows="true"
+                    android:background="@null"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:layout_marginTop="@dimen/my150dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            app:layout_scrollFlags="scroll"
+                            android:layout_width="match_parent"
+                            android:id="@+id/head_layout"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <com.mc.phonelive.views.MyImageView
+                                    android:id="@+id/miv"
+                                    android:layout_width="@dimen/my100dp"
+                                    android:layout_height="@dimen/my100dp"
+                                    android:layout_marginTop="@dimen/my125dp"
+                                    android:layout_marginLeft="@dimen/my15dp"
+                                    android:scaleType="centerCrop"
+                                    app:borderWidth="@dimen/my2dp"
+                                    android:src="@drawable/default_img"
+                                    />
+                                <RelativeLayout
+                                    android:layout_marginTop="@dimen/my150dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/my75dp"
+                                    android:layout_marginLeft="@dimen/my125dp"
+                                    android:paddingRight="@dimen/my15dp"
+                                    >
+                                    <TextView
+                                        android:id="@+id/tv_gz"
+                                        android:layout_gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:background="@drawable/shape_side_bar_bg"
+                                        android:layout_marginLeft="@dimen/my30dp"
+                                        android:layout_marginRight="@dimen/my30dp"
+                                        android:paddingTop="@dimen/my10dp"
+                                        android:paddingBottom="@dimen/my10dp"
+                                        android:textSize="@dimen/my15dp"
+                                        android:textColor="@color/white"
+                                        android:gravity="center"
+                                        android:text="关注"/>
+                                </RelativeLayout>
+                            </RelativeLayout>
+
+                            <TextView
+                                android:id="@+id/tv_nick_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/my18dp"
+                                android:paddingTop="@dimen/my5dp"
+                                android:paddingLeft="@dimen/my18dp"/>
+                            <TextView
+                                android:id="@+id/tv_id"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/gray1"
+                                android:textSize="@dimen/my14dp"
+                                android:paddingTop="@dimen/my5dp"
+                                android:paddingLeft="@dimen/my18dp"/>
+
+                                android:layout_marginBottom="@dimen/my10dp"
+                                android:layout_marginTop="@dimen/my15dp"
+                                android:layout_marginLeft="@dimen/my15dp"
+                                android:layout_marginRight="@dimen/my15dp"
+                                />
+                            <TextView
+                                android:id="@+id/tv_qm"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:lineSpacingMultiplier="1.2"
+                                android:textColor="@color/gray1"
+                                android:textSize="@dimen/my12dp"
+                                android:paddingTop="@dimen/my5dp"
+                                android:paddingLeft="@dimen/my18dp"/>
+
+                            <TextView
+                                android:id="@+id/tv_hz_fs"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="@dimen/my15dp"
+                                android:textSize="@dimen/my15dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:layout_marginTop="@dimen/my20dp"
+                                android:layout_marginBottom="@dimen/my25dp"/>
+
+
+
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                    <android.support.v7.widget.Toolbar
+                        android:visibility="invisible"
+                        android:id="@+id/toolbar1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/my69dp"
+                        app:layout_collapseMode="pin"/>
+
+
+                </android.support.design.widget.CollapsingToolbarLayout>
+
+                <com.flyco.tablayout.SlidingTabLayout
+                    android:id="@+id/tablayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/my35dp"
+                    android:background="@color/white"
+                    app:tl_tab_space_equal="true"
+                    app:tl_indicator_color="@color/colorPrimary"
+                    app:tl_textSelectColor="@color/colorPrimary"
+                    app:tl_textUnselectColor="@color/gray2"
+                    app:tl_textBold="SELECT"
+                    app:tl_indicator_corner_radius="1.5dp"
+                    app:tl_indicator_height="@dimen/my2dp"
+                    app:tl_indicator_width="@dimen/my65dp"/>
+            </android.support.design.widget.AppBarLayout>
+
+
+
+
+
+
+
+            <FrameLayout
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                >
+                <android.support.v4.view.ViewPager
+
+                    android:id="@+id/tab_viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+            </FrameLayout>
+        </android.support.design.widget.CoordinatorLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my69dp"
+        android:background="@color/white"
+        android:paddingTop="@dimen/my25dp"
+        >
+
+        <!--返回键-->
+        <RelativeLayout
+            android:id="@+id/mrl_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="@dimen/my10dp"
+            android:paddingRight="@dimen/my10dp">
+
+            <ImageView
+                android:src="@drawable/back_jiantou"
+                android:layout_width="@dimen/my25dp"
+                android:layout_height="@dimen/my25dp"
+                android:layout_centerInParent="true"
+                />
+        </RelativeLayout>
+
+
+
+        <com.mc.phonelive.views.AlphaTextColorView
+            android:id="@+id/tv_center_title1"
+            android:layout_width="@dimen/my200dp"
+            android:layout_height="@dimen/my44dp"
+            android:layout_centerHorizontal="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:textColor="#000000"
+            android:textSize="@dimen/my17sp"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rl_255"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/my25dp"
+        android:layout_height="@dimen/my44dp"
+        android:background="@color/white"
+        >
+
+        <!--返回键-->
+        <RelativeLayout
+            android:id="@+id/mrl_back_255"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:onClick="back"
+
+            android:paddingLeft="@dimen/my10dp"
+            android:paddingRight="@dimen/my10dp">
+
+            <ImageView
+                android:src="@drawable/back_jiantou"
+                android:tint="@color/black"
+                android:layout_width="@dimen/my25dp"
+                android:padding="@dimen/my5dp"
+                android:layout_height="@dimen/my25dp"
+                android:layout_centerInParent="true"
+                />
+
+        </RelativeLayout>
+
+
+        <!--右边的布局-->
+        <RelativeLayout
+            android:id="@+id/mrl_right_255"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:clickable="true"
+            android:paddingLeft="@dimen/my10dp"
+            android:paddingRight="@dimen/my10dp">
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+</RelativeLayout>

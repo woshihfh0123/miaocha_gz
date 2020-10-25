@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout android:layout_marginBottom="5dp"
+                android:id="@+id/music_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/my10dp"
+                    android:layout_marginTop="@dimen/my10sp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:paddingBottom="5dp"
+                        android:src="@mipmap/music_fragment02_title_img" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:paddingTop="5dp"
+                        android:text="我的乐器"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/my18sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/my10dp"
+                    android:layout_marginTop="@dimen/my10sp"
+                    android:layout_marginRight="@dimen/my10dp">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/music_recyclerview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+            </LinearLayout>
+            <!--我的任务-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/my10dp"
+                    android:layout_marginTop="@dimen/my10sp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:paddingBottom="5dp"
+                        android:src="@mipmap/music_fragment02_title_img" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:paddingTop="5dp"
+                        android:text="我的任务"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/my18sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <RelativeLayout android:id="@+id/task_layout01"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/my10dp"
+                    android:layout_marginTop="@dimen/my20dp"
+                    android:layout_marginRight="@dimen/my10dp"
+                    android:background="@drawable/music_task_bg">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/music_task_title_img1" />
+
+                    <TextView
+                        android:id="@+id/title01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/my10dp"
+                        android:paddingTop="@dimen/my10dp"
+                        android:text="普通任务"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/my16sp" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/task_recyclerview01"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/title01"
+                        android:paddingTop="@dimen/my10dp" />
+                </RelativeLayout>
+
+                <RelativeLayout android:id="@+id/task_layout02"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/my10dp"
+                    android:layout_marginTop="@dimen/my15dp"
+                    android:layout_marginRight="@dimen/my10dp"
+                    android:layout_marginBottom="@dimen/my20dp"
+                    android:background="@drawable/music_task_bg">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/music_task_title_img2" />
+
+                    <TextView
+                        android:id="@+id/title02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/my10dp"
+                        android:paddingTop="@dimen/my10dp"
+                        android:text="额外任务"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/my16sp" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/task_recyclerview02"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/title02"
+                        android:paddingTop="@dimen/my10dp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

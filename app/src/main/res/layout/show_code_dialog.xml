@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:background="@drawable/trading_code_dialog_label_bg"
+	android:orientation="vertical"
+	android:gravity="center">
+<!--	<android.support.v7.widget.CardView-->
+<!--		android:layout_width="276dp"-->
+<!--		app:cardCornerRadius="8dp"-->
+<!--		app:cardElevation="0dp"-->
+<!--		android:layout_height="370dp">-->
+	<ImageView android:id="@+id/code_img"
+		android:layout_width="276dp" android:scaleType="fitXY"
+		android:layout_height="370dp"
+		android:src="@drawable/default_icon"/>
+<!--	</android.support.v7.widget.CardView>-->
+</LinearLayout>

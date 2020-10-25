@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/my5dp"
+            app:cardBackgroundColor="@color/background"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="0dp"
+            app:contentPadding="0.5dp">
+
+            <ImageView
+                android:id="@+id/food_img"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/default_icon" />
+        </android.support.v7.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/food_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/cardview"
+            android:layout_toLeftOf="@+id/btn_tk"
+            android:ellipsize="end"
+            android:paddingLeft="10dp"
+            android:paddingTop="1dp"
+            android:lines="2"
+            android:text="商品名称"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/btn_tk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/food_name"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/view_grey_corner"
+            android:gravity="right"
+            android:paddingLeft="6dp"
+            android:paddingTop="2dp"
+            android:paddingRight="6dp"
+            android:paddingBottom="3dp"
+            android:text="退款"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+    <RelativeLayout android:id="@+id/guige_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:visibility="gone"
+        android:layout_below="@+id/food_name"
+        android:layout_toRightOf="@+id/cardview">
+        <TextView
+            android:id="@+id/food_guige"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:paddingLeft="10dp"
+            android:paddingTop="3dp"
+            android:singleLine="true"
+            android:text="规格"
+            android:textColor="@color/gray1"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/food_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/cardview"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="10dp"
+            android:text="x1"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/food_newprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/cardview"
+            android:layout_toRightOf="@+id/cardview"
+            android:paddingLeft="10dp"
+            android:text="￥0"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/food_oldprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/cardview"
+            android:layout_toRightOf="@+id/food_newprice"
+            android:paddingLeft="5dp"
+            android:text="￥0" android:visibility="gone"
+            android:textColor="@color/gray1"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/outtime_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray1"
+        android:padding="@dimen/my5dp" android:layout_marginTop="@dimen/my3dp"
+        android:text="ssssssssssss"
+        android:textColor="@color/black"
+        android:textSize="@dimen/my14sp"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/view01"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my1dp"
+        android:layout_marginTop="@dimen/my8dp"
+        android:background="@color/topic_item_bg" />
+</LinearLayout>

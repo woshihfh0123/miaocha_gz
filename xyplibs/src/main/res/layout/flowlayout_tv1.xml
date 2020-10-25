@@ -1,0 +1,32 @@
+<!--<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:gravity="center"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/my20dp"
+    android:paddingRight="@dimen/my20dp"
+    android:paddingTop="@dimen/my5dp"
+    android:paddingBottom="@dimen/my5dp"
+    android:layout_marginRight="@dimen/my10dp"
+    android:background="@drawable/tag_bg"
+    android:layout_marginBottom="@dimen/my10dp"
+    android:text="我是唯爱"
+    android:textSize="13sp"
+    android:textColor="@drawable/text_color"
+   >-->
+
+
+<com.bs.xyplibs.view.TextViewBorder
+    android:id="@+id/tv_text"
+    android:layout_width="@dimen/my75dp"
+    android:layout_height="@dimen/my28dp"
+    android:gravity="center"
+    android:layout_gravity="center_vertical|right"
+    app:tvborderColor="@color/colorRed"
+    android:layout_marginLeft="@dimen/my10dp"
+    android:textSize="@dimen/my13dp"
+    tools:text="中国武术"
+    android:textColor="@color/colorRed"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" />

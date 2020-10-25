@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/my30dp"
+    android:layout_marginRight="8dp"
+    android:gravity="center"
+    android:paddingLeft="8dp"
+    android:text="sfsfds"
+    android:paddingRight="8dp"
+    android:textColor="@color/gray2"
+    android:background="@drawable/shape_blk"
+    android:textSize="14sp"
+    app:mt_radius="3dp"
+    />

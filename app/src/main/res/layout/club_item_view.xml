@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent" android:layout_marginTop="@dimen/my15dp"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <com.mc.phonelive.custom.RatioRoundImageView
+            android:id="@+id/club_head_img"
+            android:layout_width="66.67dp"
+            android:layout_height="66.67dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/my10dp"
+            android:src="@drawable/default_img"
+            app:riv_corner_radius="3dp" />
+
+        <TextView
+            android:id="@+id/club_head_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/club_head_img"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/my16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/club_head_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:paddingTop="8dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/club_head_img"
+            android:text="电话："
+            android:textColor="@color/white"
+            android:textSize="@dimen/my12sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/club_head_people"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/club_head_img"
+            android:layout_toRightOf="@+id/club_head_img"
+            android:text="人数：0"
+            android:textColor="@color/white"
+            android:textSize="@dimen/my12sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/club_head_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/address_submit_bg"
+            android:paddingLeft="@dimen/my20dp"
+            android:paddingRight="@dimen/my20dp"
+            android:paddingTop="5dp" android:gravity="center"
+            android:paddingBottom="5dp"
+            android:text="加入"
+            android:textColor="@color/white"
+            android:textSize="@dimen/my12sp"
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+    <View android:layout_marginTop="@dimen/my10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" android:alpha="0.1"
+         android:background="@color/white"/>
+</LinearLayout>

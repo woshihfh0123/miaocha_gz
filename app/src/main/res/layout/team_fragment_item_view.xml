@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:gravity="center">
+
+            <com.mc.phonelive.custom.RatioRoundImageView
+                android:id="@+id/item_avator"
+                android:layout_width="@dimen/my40dp"
+                android:layout_height="@dimen/my40dp"
+                android:src="@mipmap/icon_avatar_placeholder"
+                app:riv_oval="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.3"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户"
+                android:textColor="#A8A8A8"
+                android:textSize="@dimen/my12sp" />
+
+            <TextView
+                android:id="@+id/item_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="1234567890"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/my14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="星级"
+                android:textColor="#A8A8A8"
+                android:textSize="@dimen/my12sp" />
+
+            <TextView
+                android:id="@+id/item_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/team_invite_bg"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="@dimen/my10dp"
+                android:text="Lv.0"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/my14sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="团队音分值"
+                android:textColor="#A8A8A8"
+                android:textSize="@dimen/my12sp" />
+
+            <TextView
+                android:id="@+id/item_yfz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="0"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/my14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="@dimen/my15dp"
+        android:alpha="0.5"
+        android:background="#999" />
+</LinearLayout>

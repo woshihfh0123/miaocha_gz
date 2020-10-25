@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="20dp">
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginBottom="12dp"
+        android:gravity="center"
+        android:textColor="@color/gray3"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/avatar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/time"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="5dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:scaleType="centerCrop"
+        app:riv_oval="true" />
+
+    <LinearLayout
+        android:id="@+id/bubble"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/avatar"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/avatar"
+        android:background="@drawable/ease_chatfrom_bg_account"
+        android:clickable="false"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/icon_red_pack_8"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:orientation="vertical"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="135dp"
+                android:layout_height="25dp"
+                android:ellipsize="end"
+                android:hint="恭喜发财，大吉大利"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView android:id="@+id/tv_content"
+                android:layout_width="140dp"
+                android:layout_height="25dp"
+                android:gravity="left"
+                android:text="钻石红包"
+                android:textColor="@android:color/white"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <!--    <com.zhiboshow.phonelive.custom.BubbleLayout-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_alignTop="@id/avatar"-->
+    <!--        android:layout_marginRight="75dp"-->
+    <!--        android:layout_marginTop="5dp"-->
+    <!--        android:layout_toRightOf="@id/avatar"-->
+    <!--        android:minHeight="40dp"-->
+    <!--        android:paddingBottom="7dp"-->
+    <!--        android:paddingLeft="10dp"-->
+    <!--        android:paddingRight="8dp"-->
+    <!--        android:paddingTop="7dp"-->
+    <!--        app:arrowHeight="5dp"-->
+    <!--        app:arrowPositionY="20dp"-->
+    <!--        app:arrowWidth="10dp"-->
+    <!--        app:bubbleBgColor="@color/white"-->
+    <!--        app:bubbleRadius="5dp"-->
+    <!--        android:clickable="false"-->
+    <!--        >-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/text"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_gravity="center_vertical"-->
+    <!--            android:includeFontPadding="false"-->
+    <!--            android:textColor="@color/textColor"-->
+    <!--            android:textIsSelectable="true"-->
+    <!--            android:textSize="14sp"-->
+    <!--            />-->
+    <!--    </com.zhiboshow.phonelive.custom.BubbleLayout>-->
+
+</RelativeLayout>

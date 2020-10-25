@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:focusableInTouchMode="true"
+    android:focusable="true"
+    android:paddingBottom="@dimen/my60dp"
+    android:orientation="vertical">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/my65dp"
+       android:paddingTop="@dimen/my25dp">
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           >
+
+           <TextView
+               android:id="@+id/titleView"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_centerHorizontal="true"
+               android:gravity="center"
+               android:textColor="@color/textColor"
+               android:textSize="16sp"
+               android:textStyle="bold"
+               />
+
+           <ImageView
+               android:id="@+id/btn_back"
+               android:layout_width="40dp"
+               android:layout_height="40dp"
+               android:layout_centerVertical="true"
+               android:onClick="backClick"
+               android:padding="9dp"
+               android:src="@mipmap/icon_back"
+               android:tint="@color/white"
+               />
+           <ImageView
+               android:id="@+id/btn_share"
+               android:layout_width="40dp"
+               android:layout_height="40dp"
+               android:layout_marginRight="5dp"
+               android:layout_alignParentRight="true"
+               android:onClick="backClick"
+               android:padding="9dp"
+               android:src="@drawable/mp_02"
+               android:tint="@color/white"
+               />
+       </RelativeLayout>
+   </RelativeLayout>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:gravity="center_horizontal|bottom"
+    android:layout_marginTop="@dimen/my20dp"
+    android:layout_marginLeft="@dimen/my20dp"
+    android:layout_marginRight="@dimen/my20dp"
+    >
+    <RelativeLayout
+        android:id="@+id/rl_save"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal|bottom"
+
+        >
+
+        <ImageView
+            android:id="@+id/iv_bj"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitEnd"
+
+            android:src="@drawable/mp_03"/>
+
+        <LinearLayout
+
+            android:layout_alignTop="@id/iv_bj"
+            android:layout_alignBottom="@id/iv_bj"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|bottom"
+            android:orientation="vertical"
+            >
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/my25dp"
+                android:layout_marginRight="@dimen/my25dp"
+                android:layout_marginBottom="@dimen/my20dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/iv_wbj"
+                    android:src="@drawable/mp_09"/>
+                <ImageView
+                    android:id="@+id/iv_wbj"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/my5dp"
+                    android:layout_marginRight="@dimen/my5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:src="@drawable/mp_01"/>
+                <LinearLayout
+                    android:layout_alignTop="@id/iv_wbj"
+                    android:layout_alignBottom="@id/iv_wbj"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal|center">
+                    <TextView
+                        android:id="@+id/tv_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="使用渺茶科技扫码，关注"
+                        android:textColor="@color/gray1"
+                        android:textSize="@dimen/my14dp"
+                        android:layout_centerHorizontal="true"
+                        />
+                    <RelativeLayout
+                        android:layout_width="@dimen/my150dp"
+                        android:layout_height="@dimen/my150dp"
+                        android:layout_marginTop="@dimen/my20dp">
+                        <ImageView
+                            android:id="@+id/iv_ewm"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/default_img"
+                            />
+                        <com.mc.phonelive.views.MyImageView
+                            android:id="@+id/miv"
+                            android:layout_width="@dimen/my35dp"
+                            android:layout_height="@dimen/my35dp"
+                            android:layout_centerInParent="true"
+                            app:shape="circle"
+                            />
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="关注"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/my16dp"
+                        android:layout_marginTop="@dimen/my20dp"
+                        android:layout_centerHorizontal="true"
+                        />
+                    <TextView
+                        android:id="@+id/tv_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="使用渺茶科技扫码，关注"
+                        android:layout_marginTop="@dimen/my10dp"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/my12dp"
+                        android:layout_centerHorizontal="true"
+                        />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my100dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/my20dp"
+        android:layout_marginRight="@dimen/my20dp"
+        android:paddingLeft="@dimen/my20dp"
+        android:paddingRight="@dimen/my20dp"
+        android:background="@drawable/mp_06"
+        android:gravity="center">
+        <LinearLayout
+            android:id="@+id/ll_save"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="@dimen/my45dp"
+                android:layout_height="@dimen/my45dp"
+                android:src="@drawable/mp_05"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="保存到相册"
+                android:textColor="@color/white"
+                android:textSize="@dimen/my14dp"
+                android:layout_marginTop="5dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_sys"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="@dimen/my45dp"
+                android:layout_height="@dimen/my45dp"
+                android:src="@drawable/mp_04"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="扫一扫"
+                android:textColor="@color/white"
+                android:textSize="@dimen/my14dp"
+                android:layout_marginTop="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

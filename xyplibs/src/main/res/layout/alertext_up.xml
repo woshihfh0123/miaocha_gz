@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_marginLeft="@dimen/my35dp"
+    android:layout_marginRight="@dimen/my35dp"
+    android:paddingBottom="10dp">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/my400dp"
+    android:gravity="center">
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/shengji_bg"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/my205dp"
+            android:text="版本升级"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/my14dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/tv_info"
+            android:gravity="top"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/my120dp"
+            android:maxLines="5"
+            android:lineSpacingMultiplier="1.1"
+            android:layout_marginLeft="@dimen/my10dp"
+            android:paddingLeft="@dimen/my15dp"
+            android:paddingRight="@dimen/my15dp"
+            android:paddingTop="@dimen/my15dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/my13dp"
+            android:layout_below="@id/tv_title"
+            android:layout_above="@id/ll"/>
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/my45dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_cancle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/colorGray"
+                android:text="稍后再说"/>
+            <TextView
+                android:id="@+id/tv_submit"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:text="立即更新"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coin_item"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/bg_coin_money1"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="15dp" android:paddingTop="5dp" android:paddingBottom="5dp"
+    android:paddingRight="15dp">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:src="@mipmap/icon_live_gift_zs"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/coin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/img"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/gray1"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/give"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/coin"
+        android:layout_toRightOf="@id/img"
+        android:textColor="@color/redlive"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <View
+        style="@style/line2"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone" />
+</LinearLayout>

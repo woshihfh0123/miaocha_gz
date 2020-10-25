@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/redlive" android:id="@+id/view_title"
+        android:paddingTop="19dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/titleView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:onClick="backClick"
+                android:padding="9dp"
+                android:src="@mipmap/icon_back"
+                android:tint="@color/white"
+                />
+
+        </RelativeLayout>
+    </FrameLayout>
+
+    <TextView android:paddingTop="@dimen/my10dp"
+        android:layout_width="wrap_content" android:layout_margin="@dimen/my10dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold" android:text="分类"
+        android:textSize="@dimen/my17sp" android:textColor="@color/textColor"/>
+    <RelativeLayout android:paddingTop="@dimen/my15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/menu_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

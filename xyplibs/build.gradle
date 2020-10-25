@@ -1,0 +1,222 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    /*
+            *
+        测试版获取命令
+        c:
+        cd users\Administrator         //Administrator为用户名
+        cd .android
+        keytool -list -v -keystore debug.keystore
+
+
+
+        keytool -list -v -keystore debug.keystore
+
+
+            开发版MD5
+            F3:4F:54:96:76:C8:3B:A5:1F:FE:B0:BA:16:82:99:7D
+            开发版SHA1
+            6A:FF:72:E0:E4:29:48:D5:9F:02:9F:AA:EF:EC:33:70:71:D3:A9:22
+            开发版SHA256
+            3A:92:AE:AC:04:8F:8C:20:4C:FB:CD:BE:35:21:6C:AB:32:D3:DF:36:75:AB:00:26:3B:2C:B3:AA:7C:9B:5D:BF
+            签名算法
+            SHA1withRSA
+
+
+            正式版获取命令：
+keytool -list -v -keystore G:\huang_xiao_ye\hxy\app\hxy.jks
+
+
+
+            正式版SHA1
+             MD5:  7F:67:E6:3D:1A:49:86:91:E9:D0:D5:43:46:C5:A6:B2
+             正式版SHA1: 0B:DB:61:A5:6E:2A:DC:7C:11:C3:DD:A6:29:27:96:B6:8D:2B:6A:8D
+            SHA256: 7C:AE:36:29:DC:80:34:1F:B5:39:F7:D9:15:9F:AC:68:5C:F0:45:F7:55:07:19:EA:E3:7D:9E:51:8E:D4:73:D3
+
+            SHA256withRSA
+
+            * */
+
+
+    buildToolsVersion = rootProject.ext.buildToolsVersion
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+configurations.all {
+    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+        def requested = details.requested
+        if (requested.group == 'com.android.support') {
+            if (!requested.name
+
+                    .startsWith("multidex")) {
+                details.useVersion '28.0.0'
+            }
+        }
+    }
+}
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    api 'com.google.code.gson:gson:2.8.0'
+    api 'com.android.support:multidex:1.0.2'
+
+    //    api 'com.github.bumptech.glide:glide:3.7.0'
+    api 'com.lzy.net:okgo:3.0.4'
+    api 'com.inuker.bluetooth:library:1.4.0'
+    api 'com.clj.fastble:FastBleLib:2.3.2'
+
+    //新ble
+    api 'com.ashokvarma.android:bottom-navigation-bar:2.1.0'
+
+    //2.0.4
+
+    //    api 'com.umeng.sdk:common:latest.integration'
+
+    //    api 'com.umeng.sdk:analytics:latest.integration'
+
+    //    api 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+'
+    api 'org.greenrobot:eventbus:3.1.1'
+    api 'cn.bingoogolapple:bga-baseadapter:1.2.9@aar'
+    api 'com.android.support:recyclerview-v7:27.1.1'
+    api 'cn.bingoogolapple:bga-progressbar:1.0.1@aar'
+    api 'cn.bingoogolapple:bga-photopicker:1.2.8@aar'
+    api 'com.orhanobut:logger:2.2.0'
+
+    //    api 'com.alibaba:fastjson:1.2.54'
+    api 'com.alibaba:fastjson:1.1.70.android'
+    api 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-18'
+    api 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-alpha-18'
+
+    //没有使用特殊Header，可以不加这行
+    api 'com.android.support:design:27.1.1'
+
+    //版本随意（非必须，引用可以解决无法预览问题）
+    api 'cn.bingoogolapple:bga-swipebacklayout:1.1.9@aar'
+
+    //滑动返回https://github.com/bingoogolapple/BGASwipeBackLayout-Android
+    api 'com.jaeger.statusbarutil:library:1.5.1'
+
+    //状态栏一体化https://jaeger.itscoder.com/android/2016/03/27/statusbar-util.html
+    api 'com.youth.banner:banner:1.4.10'
+    api 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.40'
+    api 'ch.ielse:switchbutton:1.0.1'
+
+    //https://github.com/iielse/SwitchButton
+    api 'com.github.lecho:hellocharts-library:1.5.8@aar'
+    api 'com.contrarywind:Android-PickerView:4.1.9'
+
+    //https://github.com/Bigkoo/Android-PickerView
+    api 'pub.devrel:easypermissions:1.0.1'
+    api 'com.github.bumptech.glide:glide:4.7.1'
+    api 'com.hyman:flowlayout-lib:1.1.2'
+    api 'cn.jzvd:jiaozivideoplayer:6.3.1'
+    //视频缓存
+    api 'com.danikula:videocache:2.7.1'
+    //流式布局https://github.com/hongyangAndroid/FlowLayout
+    api 'com.github.rey5137:material:1.2.4'
+
+    //https://github.com/rey5137/material
+    api 'com.gavin.com.library:stickyDecoration:1.4.7'
+
+    //https://github.com/Gavin-ZYX/StickyDecoration
+    api 'me.zhanghai.android.materialratingbar:library:1.3.1'
+
+    //星级评论
+    api 'com.sflin:csstextview:1.0.0'
+    api 'cn.yipianfengye.android:zxing-library:2.2'
+    api 'com.sunfusheng:MarqueeView:1.4.1'
+    api 'q.rorbin:badgeview:1.1.3'
+
+    // 滚动广告https://github.com/sunfusheng/MarqueeView
+
+    //    api 'cn.jiguang.sdk:jpush:3.1.5'  // 此处以JPush 3.1.5 版本为例。
+
+    //    api 'cn.jiguang.sdk:jcore:1.2.3'  // 此处以JCore 1.2.3 版本为例。
+    api 'android.arch.lifecycle:extensions:1.1.1'
+
+    //fragment爆红解决
+
+    //    api 'org.litepal.android:core:2.0.0'
+    api 'org.litepal.android:java:3.0.0'
+
+    //数据库工具
+    api 'top.zibin:Luban:1.1.8'
+    //图片压缩工具
+    api 'io.reactivex.rxjava2:rxjava:2.1.6'
+
+    //    api 'cn.pedant.sweetalert:library:1.3'//加载进度等确认小弹窗
+    api 'com.github.f0ris.sweetalert:library:1.5.1'
+    api 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    api 'com.github.mcxtzhang:SuspensionIndexBar:V1.0.0'
+
+    //仿美团地址搜索https://github.com/mcxtzhang/SuspensionIndexBar
+    api 'com.tencent.bugly:crashreport:latest.release'
+
+    //其中latest.release指代最新Bugly SDK版本号，也可以指定明确的版本号，例如2.2.0
+    api 'com.hjq:toast:5.0'
+    api 'org.java-websocket:Java-WebSocket:1.3.0'
+    api 'com.koushikdutta.async:androidasync:2.+'
+    api 'com.yanzhenjie:sofia:1.0.5'
+
+    //渐变头，沉浸式一体
+    api 'com.github.iwgang:countdownview:2.1.6'
+
+    // 倒计时控件 api 'com.github.iwgang:countdownview:2.1.6'
+    api 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+
+    //配合SBrUtils使用
+    api 'de.hdodenhof:circleimageview:3.0.0'
+    api 'com.allenliu.versionchecklib:library:2.1.8'
+
+    //    api 'com.github.LuckSiege.PictureSelector:picture_library:v2.2.3'
+
+    //图片选择器
+    api 'jp.wasabeef:glide-transformations:4.0.1'
+
+    // SBrUtil.setStatusBarMode(this, true, R.color.white);
+    api 'com.yarolegovich:discrete-scrollview:1.4.9'
+
+    //水平类似画廊布局https://github.com/yarolegovich/DiscreteScrollView
+
+
+//    api 'com.shuyu:GSYVideoPlayer:6.0.3'
+    //    api 'com.shuyu:gsyVideoPlayer-java:6.0.3'
+    api 'com.github.xiaoyanger0825:NiceVieoPlayer:v2.2'
+    api 'com.amap.api:3dmap:latest.integration'
+    api 'com.amap.api:search:latest.integration'
+    api 'com.amap.api:location:latest.integration'
+    api 'com.xingliuhua:xlhratingbar_lib:1.0.1'
+    api 'com.iarcuschin:simpleratingbar:0.1.5'
+    api 'com.ycjiang:ImagePreview:2.2.3'
+    api 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+    api 'com.github.xiaohaibin:XBanner:1.6.7'
+    api project(path: ':picture_library')
+    api 'q.rorbin:VerticalTabLayout:1.2.5'//垂直TabLayout   https://github.com/qstumn/VerticalTabLayout
+//    https://github.com/FJ917/FJDropDownMenu  //多级筛选参考
+    //    api 'com.github.shinelw.colorarcprogressbar:library:1.0.3'
+
+    //    api 'com.haozhang.libary:android-slanted-textview:1.2' // 边角斜TextView 控件  https://github.com/HeZaiJin/SlantedTextView
+//    https://github.com/KunMinX/Linkage-RecyclerView  外卖列表
+
+
+}

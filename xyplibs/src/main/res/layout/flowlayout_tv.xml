@@ -1,0 +1,19 @@
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:gravity="center"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/my20dp"
+    android:paddingRight="@dimen/my20dp"
+    android:paddingTop="@dimen/my5dp"
+    android:paddingBottom="@dimen/my5dp"
+    android:background="@drawable/tag_bg"
+    android:layout_marginRight="@dimen/my10dp"
+    android:layout_marginBottom="@dimen/my10dp"
+    android:text="我是唯爱"
+    android:textSize="13sp"
+    android:textColor="@drawable/text_color"
+   >
+
+
+</TextView>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/gray1"
+    android:layout_margin="@dimen/my1dp"
+    android:id="@+id/rl"
+    android:gravity="center"
+    >
+                <ImageView
+                    android:id="@+id/iv_pic"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minHeight="@dimen/my100dp"
+                    android:scaleType="centerCrop"
+                    android:background="@color/white"
+                    android:src="@drawable/default_img"
+                    />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:paddingLeft="@dimen/my5dp"
+                android:paddingBottom="@dimen/my5dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="@dimen/my18dp"
+                    android:layout_height="@dimen/my18dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/base_photo_def"/>
+                <TextView
+                    android:id="@+id/tv_dz_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|left"
+                    android:layout_marginLeft="@dimen/my3dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/my12dp"
+                    android:text="28"/>
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

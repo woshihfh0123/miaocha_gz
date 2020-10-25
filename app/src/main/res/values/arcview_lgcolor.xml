@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="arcview">
+        <attr name="archeight" format="dimension"/>
+        <attr name="lgcolor"   format="color"/>
+        <attr name="bgcolor" format="color"/>
+    </declare-styleable>
+</resources>

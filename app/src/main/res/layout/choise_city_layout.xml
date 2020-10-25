@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/my10dp">
+
+        <LinearLayout android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/my60dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="选择所在的省"
+                android:textColor="@color/gray1"
+                android:textSize="@dimen/my16sp" />
+
+            <TextView
+                android:id="@+id/choise_province"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableRight="@mipmap/right_icon"
+                android:drawablePadding="10dp"
+                android:gravity="right|center_vertical"
+                android:text="选择"
+                android:textColor="@color/white"
+                android:textSize="@dimen/my16sp" />
+        </LinearLayout>
+
+        <View android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line1" />
+
+        <LinearLayout android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/my60dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="选择所在的市"
+                android:textColor="@color/gray1"
+                android:textSize="@dimen/my16sp" />
+
+            <TextView
+                android:id="@+id/choise_city"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableRight="@mipmap/right_icon"
+                android:drawablePadding="10dp"
+                android:gravity="right|center_vertical"
+                android:text="选择"
+                android:textColor="@color/white"
+                android:textSize="@dimen/my16sp" />
+        </LinearLayout>
+
+        <View android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/my60dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="选择所在的区域"
+                android:textColor="@color/gray1"
+                android:textSize="@dimen/my16sp" />
+
+            <TextView
+                android:id="@+id/choise_area"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableRight="@mipmap/right_icon"
+                android:drawablePadding="10dp"
+                android:gravity="right|center_vertical"
+                android:text="选择"
+                android:textColor="@color/white"
+                android:textSize="@dimen/my16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line1" />
+
+        <TextView
+            android:id="@+id/choise_submit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/my45dp"
+            android:layout_marginLeft="@dimen/my42dp"
+            android:layout_marginTop="@dimen/my100dp"
+            android:layout_marginRight="@dimen/my42dp"
+            android:background="@drawable/address_submit_bg"
+            android:gravity="center"
+            android:text="确认"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</LinearLayout>

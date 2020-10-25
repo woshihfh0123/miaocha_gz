@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/adv_num"
+        android:layout_width="41dp"
+        android:layout_height="40dp"
+        android:background="@mipmap/live_goods_first_bg"
+        android:gravity="center"
+        android:text="0件\n直播购"
+        android:textColor="@color/white"
+        android:textSize="11sp"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/live_goods_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+</LinearLayout>

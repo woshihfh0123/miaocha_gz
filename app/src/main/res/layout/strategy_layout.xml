@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/view_title"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/strategy_img"/>
+
+        <TextView android:id="@+id/strategy_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="攻略" android:layout_marginLeft="@dimen/my10dp"
+            android:layout_marginRight="@dimen/my10dp"
+            android:layout_marginTop="@dimen/my10dp"
+            android:textColor="@color/white" android:lineSpacingExtra="5dp"
+            android:textSize="@dimen/my13sp"/>
+    </LinearLayout>
+</LinearLayout>

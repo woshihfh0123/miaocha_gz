@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/refreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <com.mc.phonelive.views.ClearEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/my40dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="@dimen/my25dp"
+                        android:layout_marginTop="@dimen/my10dp"
+                        android:hint="搜索用户备注和名字"
+                        android:textSize="@dimen/my14dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/gray2"
+                        android:textColorHint="@color/gray1"
+                        android:background="@null"
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:nestedScrollingEnabled="false"
+                            android:paddingBottom="@dimen/my80dp"
+                            />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+
+
+
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+        <TextView
+            android:id="@+id/tv_noinfo"
+            android:text=""
+            style="@style/gloable_iv_noinfo" />
+    </FrameLayout>
+</LinearLayout>

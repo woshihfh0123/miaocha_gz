@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:focusable="true"
+              android:orientation="vertical">
+
+    <include layout="@layout/view_title"/>
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/srl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.mc.phonelive.views.MyScrollview
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/my50dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="查看全部"
+                    android:textColor="@color/gray1"/>
+                <ImageView
+                    android:layout_width="@dimen/my18dp"
+                    android:layout_height="@dimen/my18dp"
+                    android:tint="@color/gray1"
+                    android:src="@mipmap/bga_pp_ic_arrow_down"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/my50dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/my20dp"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="推荐关注"
+                    android:textColor="@color/gray1"/>
+                <ImageView
+                    android:layout_width="@dimen/my18dp"
+                    android:layout_height="@dimen/my18dp"
+                    android:tint="@color/gray1"
+                   />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_tj"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        </com.mc.phonelive.views.MyScrollview>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

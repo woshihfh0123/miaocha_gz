@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_marginLeft="@dimen/my25dp"
+    android:layout_marginRight="@dimen/my25dp"
+    android:background="@drawable/bt_zj_write"
+    android:layout_gravity="center"
+   android:paddingBottom="10dp">
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/my15dp"
+        android:visibility="gone"
+        android:paddingLeft="@dimen/my10dp"
+        android:paddingRight="@dimen/my10dp"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        android:textSize="@dimen/my16dp"/>
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请输入参团邀请码"
+        android:layout_marginTop="@dimen/my15dp"
+        android:layout_marginBottom="@dimen/my10dp"
+        android:gravity="center_horizontal"
+        android:paddingLeft="@dimen/my10dp"
+        android:lineSpacingMultiplier="1.2"
+        android:paddingRight="@dimen/my10dp"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/my14dp"/>
+
+    <Button
+        android:layout_marginTop="@dimen/my10dp"
+        android:id="@+id/bt_submit"
+        android:text="我知道了"
+        android:textSize="@dimen/my14dp"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/zs_shape"
+        style="@style/button_all_style"
+        android:layout_width="wrap_content"
+        android:paddingLeft="@dimen/my10dp"
+        android:paddingRight="@dimen/my10dp"
+        android:layout_height="@dimen/my30dp"
+        android:layout_marginLeft="@dimen/my15dp"
+        android:layout_marginRight="@dimen/my15dp"
+        android:layout_marginBottom="@dimen/my10dp"
+        />
+
+
+</LinearLayout>

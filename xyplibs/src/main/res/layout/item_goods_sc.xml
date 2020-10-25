@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <android.support.v7.widget.CardView
+        android:layout_gravity="center"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        app:cardCornerRadius="@dimen/my5dp"
+    android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/my5dp"
+    android:background="@color/colorWhite"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/img_cover"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:minHeight="@dimen/my200dp"/>
+                <View
+                    android:background="#E5E5E5"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <TextView
+                    android:layout_marginLeft="@dimen/my5dp"
+                    android:layout_marginRight="@dimen/my5dp"
+                    android:layout_marginTop="@dimen/my5dp"
+                    android:background="@color/colorWhite"
+                    android:singleLine="true"
+                    android:text="防晒液SPF50+50ml"
+                    android:textColor="#ff4d4d4d"
+                    android:textSize="@dimen/my11dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_name"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/my5dp"
+    android:background="@color/colorWhite"
+    android:paddingRight="@dimen/my5dp"
+    android:paddingBottom="@dimen/my8dp"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_marginLeft="@dimen/my5dp"
+        android:text="¥"
+        android:textColor="@color/colorAccent"
+        android:textSize="12dp"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_marginLeft="@dimen/my5dp"
+        android:text="99"
+        android:textColor="@color/colorBlack"
+        android:textSize="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_xl"/>
+</LinearLayout>
+
+            </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>

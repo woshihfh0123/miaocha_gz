@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my200dp"
+        android:background="@mipmap/mine_team" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/my25dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/my45dp">
+
+            <LinearLayout
+                android:id="@+id/back_layout"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/my13dp" android:tint="@color/white"
+                    android:src="@mipmap/icon_back" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/title_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="我的团队"
+                android:textColor="@color/white"
+                android:textSize="@dimen/my18sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/title_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" android:padding="10dp"
+                android:text="代理级别" android:layout_centerVertical="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/my15sp"
+                android:textStyle="normal" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/my130dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/user_num_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/my28dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/my10dp"
+                    android:text="分销用户(人)"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/my13dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/my0.5dp"
+                android:layout_height="@dimen/my80dp"
+                android:background="@color/alertdialog_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/commission_num_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/my28dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/my10dp"
+                    android:text="累计佣金(元)"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/my13dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/my40dp"
+            android:layout_margin="@dimen/my20dp"
+            android:background="@drawable/myteam_bg">
+
+            <TextView
+                android:id="@+id/one_user_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/myteam_one_bg"
+                android:gravity="center"
+                android:text="一级用户"
+                android:textColor="@color/white"
+                android:textSize="@dimen/my15sp" />
+
+            <TextView
+                android:id="@+id/two_user_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="二级用户"
+                android:textColor="@color/textColor2"
+                android:textSize="@dimen/my15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/my40dp"
+            android:layout_marginTop="-5dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/my50dp"
+            android:paddingRight="@dimen/my35dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="用户名"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/my15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="佣金"
+                android:textColor="@color/black"
+                android:textSize="@dimen/my15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.scwang.smartrefresh.layout.SmartRefreshLayout
+                android:id="@+id/refreshLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <android.support.v4.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/team_recyclerview"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+
+                        </RelativeLayout>
+
+                    </android.support.v4.widget.NestedScrollView>
+
+                    <include layout="@layout/view_no_data_default" />
+                </RelativeLayout>
+
+                <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+                    android:id="@+id/footer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

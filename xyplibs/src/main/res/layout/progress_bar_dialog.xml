@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:padding="5dp"
+        android:layout_width="@dimen/my40dp"
+        android:layout_height="@dimen/my40dp"
+        android:background="@color/colorTrans1"
+        android:indeterminate="false"
+        android:indeterminateOnly="true"
+        android:indeterminateDrawable="@drawable/progressbg"
+        android:indeterminateBehavior="repeat"/>
+</LinearLayout>

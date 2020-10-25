@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+    <View
+        style="@style/tab_five_diver_view"
+        android:layout_margin="@dimen/my0dp"
+        android:background="@color/colorGray"/>
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:paddingTop="@dimen/my10dp"
+        android:paddingLeft="@dimen/my8dp"
+        android:paddingBottom="@dimen/my10dp"
+        android:background="@color/colorViewBg"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/circleEt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:minHeight="@dimen/my80dp"
+            android:maxHeight="@dimen/my180dp"
+            android:padding="@dimen/my5dp"
+            android:focusable="true"
+            android:gravity="top"
+            android:textSize="@dimen/my14dp"
+            android:layout_weight="1"
+            android:hint="说点什么..."
+            />
+        <ImageView
+            android:id="@+id/sendIv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="4dp"
+            android:contentDescription="@null"
+            android:src="@drawable/selector_send" />
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my1dp" />
+</LinearLayout>

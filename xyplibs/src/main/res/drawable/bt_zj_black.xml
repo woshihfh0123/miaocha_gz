@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle"
+    android:useLevel="false" >
+    <corners
+
+        android:radius="@dimen/my3dp"
+        />
+    <solid android:color="#000000"></solid>
+</shape>

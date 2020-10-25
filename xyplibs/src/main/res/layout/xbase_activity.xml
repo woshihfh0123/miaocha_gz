@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <View
+                android:id="@+id/v_actionbar"
+                style="@style/Action_bar_view_style" />
+            <com.bs.xyplibs.view.MyTitleBarView
+                android:id="@+id/my_titlebar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/my35dp"
+                app:my_title="标题"/>
+           <!-- <RelativeLayout
+                android:id="@+id/base_head_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/colorPrimary"
+                android:visibility="visible"
+                >
+
+                <TextView
+                    android:id="@+id/base_back_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:drawableLeft="@drawable/base_ic_head_back"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:text="返回"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp"
+                    android:clickable="true"
+                    />
+
+                <TextView
+                    android:id="@+id/base_title_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:maxLength="10"
+                    android:text=""
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/base_ok_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:clickable="true"  />
+            </RelativeLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/base_content_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorWhite"
+                    android:clickable="true"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/no_content_tv"
+                    android:text=""
+                    style="@style/tv_noinfo_style" />
+
+                <TextView
+                    android:id="@+id/no_net_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/no_net"
+                    android:text="网络异常,请重新尝试"
+                    android:textColor="@color/colorGray"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/colorRed"
+            android:visibility="gone"
+            android:textStyle="bold"
+            android:textSize="@dimen/my20dp"
+            android:text="测试版"/>
+    </FrameLayout>
+</LinearLayout>

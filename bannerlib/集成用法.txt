@@ -1,0 +1,54 @@
+	1.在你需要用到的地方布局
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/white"
+			android:orientation="vertical">
+			<RelativeLayout
+				android:id="@+id/rl_banner"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="10dp"/>
+
+		</LinearLayout>
+	
+	
+	2.在代码中，写一个方法，调用它，比如：
+	
+		 /**
+		 * BannerLayout实现轮播图效果
+		 */
+		private void setAdvData(List<MainVideoListVO.DataBean.SliderBean> multi_adv) {
+			ViewGroup.LayoutParams params = rl_banner.getLayoutParams();
+			params.width = CommentUtil.getDisplayWidth(mActivity);
+			params.height = (int) ((int) (params.width * 0.5));
+			rl_banner.setLayoutParams(params);
+			final List<PicBean> list = new ArrayList<>();
+			for (int i = 0; i < multi_adv.size(); i++) {
+				PicBean bean = new PicBean();
+				bean.setId(multi_adv.get(i).getId());
+				bean.setPic(multi_adv.get(i).getPic());
+				bean.setTitle(multi_adv.get(i).getTitle());
+				bean.setUrl(multi_adv.get(i).getUrl());
+				list.add(bean);
+			}
+			
+		 //两种效果 带滑动缩放效果以及圆角以及普通轮播图
+        //两种效果 带滑动缩放效果以及圆角以及普通轮播图
+		
+        BannerGetData.getBannerData(mActivity,this,rl_banner,  list,true,true,Color.RED,Color.GRAY,5,5,1);
+		}
+	
+	3.还差一个点击事件：
+	
+		@Override
+		public void onItemClick(View view, PicBean bean) {
+			//TODO:在这里添加跳转到何处去
+		}
+	
+	
+	
+	
+	
+	
+	

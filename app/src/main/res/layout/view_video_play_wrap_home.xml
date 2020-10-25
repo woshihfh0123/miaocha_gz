@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/video_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <ImageView
+        android:id="@+id/cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop" />
+
+    <RelativeLayout
+        android:layout_width="@dimen/my50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="70dp">
+
+        <com.mc.phonelive.views.MyImageView
+            android:id="@+id/miv_phc"
+            android:layout_width="@dimen/my50dp"
+            android:layout_height="@dimen/my50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="85dp"
+            android:src="@drawable/phc_ic"
+
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/rl_pic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/miv_phc">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/avatar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="centerCrop"
+                app:riv_border_color="#fff"
+                app:riv_border_width="1dp"
+                app:riv_oval="true" />
+
+            <ImageView
+                android:id="@+id/iv_zbz"
+                android:layout_width="@dimen/my51dp"
+                android:layout_height="@dimen/my51dp"
+                android:src="@drawable/iv_bj_cir"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/btn_follow"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="36dp"
+                android:padding="3dp" />
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/btn_like"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/rl_pic"
+            android:layout_marginTop="15dp" />
+
+        <TextView
+            android:id="@+id/like_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/btn_like"
+            android:layout_marginBottom="-8dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="#fff"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/btn_comment"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/btn_like"
+            android:layout_marginTop="10dp"
+            android:padding="7dp"
+            android:src="@mipmap/icon_video_comment" />
+
+        <TextView
+            android:id="@+id/comment_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/btn_comment"
+            android:layout_marginBottom="-8dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="#fff"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/btn_share"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/btn_comment"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:padding="7dp"
+            android:src="@mipmap/icon_video_share" />
+
+        <TextView
+            android:id="@+id/share_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/btn_share"
+            android:layout_marginBottom="-8dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="#fff"
+            android:textSize="13sp" />
+
+        <RelativeLayout
+            android:id="@+id/rlsb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/share_num"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/shop_reward"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="36dp"
+                android:padding="3dp"
+                android:src="@mipmap/shang_icon" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/my40dp"
+            android:layout_height="@dimen/my40dp"
+            android:layout_below="@id/rlsb"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="36dp">
+
+            <ImageView
+                android:id="@+id/shop_show"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/cart" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/my12dp"
+                android:layout_marginBottom="@dimen/my9dp"
+                android:text="商城"
+                android:textColor="@color/white"
+                android:textSize="@dimen/my10dp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/my10dp"
+        android:layout_marginBottom="@dimen/my60dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_zbz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/my10dp"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/my10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/my40dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="@dimen/my50dp"
+                    android:layout_height="@dimen/my0.5dp"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/my15dp"
+                    android:src="@drawable/zb_x" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/my5dp"
+                    android:layout_marginRight="@dimen/my15dp"
+                    android:gravity="center"
+                    android:text="点击进入直播间"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/my22dp" />
+
+                <View
+                    android:layout_width="@dimen/my50dp"
+                    android:layout_height="@dimen/my0.5dp"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="@dimen/my50dp"
+                android:layout_height="@dimen/my20dp"
+                android:background="@drawable/shape_red_zj"
+                android:gravity="center"
+                android:text="直播中"
+                android:textColor="@color/white"
+                android:textSize="@dimen/my12dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_home_blk"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="3dp"
+            android:paddingTop="2dp"
+            android:paddingRight="3dp"
+            android:paddingBottom="2dp">
+
+            <ImageView
+                android:layout_width="@dimen/my15dp"
+                android:layout_height="@dimen/my15dp"
+                android:src="@drawable/local_address_img"
+                android:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/my2dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/my12dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/title"
+            android:layout_marginTop="@dimen/my5dp"
+            android:layout_marginRight="@dimen/my80dp"
+            android:layout_marginBottom="@dimen/my4dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="#fff"
+            android:textSize="@dimen/my15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/my80dp"
+            android:layout_marginBottom="@dimen/my5dp"
+            android:text=""
+            android:textColor="#fff"
+            android:textSize="@dimen/my13dp" />
+
+
+        <LinearLayout
+            android:id="@+id/btn_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:background="@drawable/shape_btn_info">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/my4dp"
+                android:layout_marginBottom="@dimen/my4dp"
+                android:layout_marginRight="@dimen/my8dp"
+                android:layout_marginLeft="@dimen/my8dp"
+                android:text="查看详情"
+                android:textColor="#fff"
+                android:textSize="@dimen/my13dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/tj_goods_layout"
+            android:layout_width="@dimen/my170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:visibility="gone">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="0dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.mc.phonelive.custom.RatioRoundImageView
+                        android:id="@+id/tj_img"
+                        android:layout_width="@dimen/my50dp"
+                        android:layout_height="@dimen/my50dp"
+                        android:background="@color/background"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/ic_launcher"
+                        app:riv_corner_radius_bottom_left="5dp"
+                        app:riv_corner_radius_top_left="5dp" />
+
+                    <TextView
+                        android:id="@+id/tj_goods_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/tj_img"
+                        android:ellipsize="end"
+                        android:paddingLeft="@dimen/my10dp"
+                        android:paddingTop="8dp"
+                        android:paddingRight="5dp"
+                        android:singleLine="true"
+                        android:text="名称名称名称名称名称"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/my11sp" />
+
+                    <TextView
+                        android:id="@+id/tj_goods_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tj_goods_name"
+                        android:layout_toRightOf="@+id/tj_img"
+                        android:paddingLeft="@dimen/my10dp"
+                        android:paddingTop="3dp"
+                        android:text="￥0"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/my11sp" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

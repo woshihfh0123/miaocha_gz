@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="@dimen/my300dp"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:background="@drawable/custom_confirm_dialog_top_back"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="版本更新"
+                android:textSize="@dimen/my15sp"
+                android:textColor="@color/colorBlack"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/my10dp"
+                android:layout_marginBottom="@dimen/my10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="@dimen/my10dp"
+                android:layout_marginBottom="@dimen/my15dp"
+                android:id="@+id/tv_dialog_content"
+                android:layout_marginLeft="@dimen/my15dp"
+                android:layout_marginRight="@dimen/my15dp"
+                android:textSize="@dimen/my14sp"
+                android:textColor="#333333"
+                android:text="12323"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/my50dp">
+
+            <TextView
+                android:id="@+id/versionchecklib_version_dialog_cancel"
+                android:background="@drawable/custom_confirm_dialog_bottom_left_back"
+                android:layout_weight="1"
+                android:text="取消"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:layout_width="@dimen/my0dp"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/versionchecklib_version_dialog_commit"
+                android:layout_weight="1"
+                android:textColor="@android:color/white"
+                android:background="@drawable/custom_confirm_dialog_bottom_right_back"
+                android:text="确定"
+                android:gravity="center"
+                android:layout_width="@dimen/my0dp"
+                android:layout_height="match_parent"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

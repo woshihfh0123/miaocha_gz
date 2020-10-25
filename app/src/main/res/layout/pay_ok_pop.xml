@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+
+ >
+   <android.support.v7.widget.CardView
+       android:id="@+id/cv"
+       android:layout_gravity="center_horizontal"
+       android:layout_width="@dimen/my280dp"
+       android:layout_height="@dimen/my310dp"
+       app:cardCornerRadius="@dimen/my7dp"
+       app:cardElevation="@dimen/my0dp"
+       app:cardPreventCornerOverlap="true"
+       app:layout_constraintTop_toTopOf="parent">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@color/white"
+         android:orientation="vertical">
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/my160dp">
+            <ImageView
+                android:id="@+id/iv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/my160dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pay_bg"/>
+            <ImageView
+                android:id="@+id/iv_ok"
+                android:layout_width="@dimen/my60dp"
+                android:layout_height="@dimen/my60dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/pay_ok"/>
+            <TextView
+                android:layout_below="@id/iv_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/my14dp"
+                android:layout_centerInParent="true"
+                android:textStyle="bold"
+                android:text="支付成功"/>
+         </RelativeLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/my80dp"
+   android:gravity="center"
+   android:orientation="vertical">
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="恭喜获得"
+       android:textSize="@dimen/my13dp"
+       android:textColor="#222222"
+       android:gravity="center"
+       />
+   <TextView
+       android:id="@+id/tv_content"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="@dimen/my5dp"
+       android:text="恭喜获得"
+       android:textSize="@dimen/my13dp"
+       android:textColor="#222222"
+       android:gravity="center"
+       />
+</LinearLayout>
+
+
+         <TextView
+             android:id="@+id/tv_submit"
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/my40dp"
+             android:layout_marginLeft="@dimen/my25dp"
+             android:layout_marginRight="@dimen/my25dp"
+             android:layout_marginBottom="@dimen/my15dp"
+             android:background="@drawable/shape_3red"
+             android:textSize="@dimen/my15dp"
+             android:textColor="@color/white"
+             android:textStyle="bold"
+             android:gravity="center"
+             android:text="去积分商城"/>
+      </LinearLayout>
+
+
+
+   </android.support.v7.widget.CardView>
+
+<ImageView
+    android:id="@+id/iv_close"
+    android:layout_width="@dimen/my42dp"
+    android:layout_height="@dimen/my42dp"
+  android:layout_marginTop="@dimen/my15dp"
+    android:padding="@dimen/my7dp"
+    android:src="@drawable/close_ic"/>
+
+
+</LinearLayout>

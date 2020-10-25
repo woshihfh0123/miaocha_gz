@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/search_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/my5dp"
+                android:paddingBottom="@dimen/my10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/my10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/my35dp"
+                        android:layout_toLeftOf="@+id/search_submit">
+
+                        <EditText
+                            android:id="@+id/search_edit"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/my40dp"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/club_search_bg"
+                            android:hint="请输入手机号查找交易用户"
+                            android:paddingLeft="@dimen/my40dp"
+                            android:paddingRight="@dimen/my30dp"
+                            android:singleLine="true"
+                            android:textColor="#B4B4B4"
+                            android:textColorHint="#B4B4B4"
+                            android:textCursorDrawable="@drawable/my_cursor"
+                            android:textSize="@dimen/my14sp" />
+
+                        <ImageView
+                            android:id="@+id/search_img"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/my10dp"
+                            android:padding="8dp"
+                            android:src="@mipmap/club_search_img" />
+
+                        <ImageView
+                            android:id="@+id/search_close_img"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/my5dp"
+                            android:padding="8dp"
+                            android:src="@mipmap/sld_close"
+                            android:tint="#AFAFB1" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/search_submit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/my10dp"
+                        android:paddingLeft="@dimen/my10dp"
+                        android:paddingRight="@dimen/my10dp"
+                        android:text="查找"
+                        android:textColor="@color/redlive"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/trading_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/search_layout" />
+
+            <TextView
+                android:id="@+id/no_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/my200dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/no_data"
+                android:textColor="@color/gray1"
+                android:textSize="14sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

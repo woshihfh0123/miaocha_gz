@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/my15dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="@dimen/my10dp">
+
+        <ImageView
+            android:id="@+id/food_img"
+            android:layout_width="@dimen/my50dp"
+            android:layout_height="@dimen/my50dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_icon" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/my5dp">
+
+            <TextView
+                android:id="@+id/food_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/food_ratingbar"
+                android:ellipsize="end"
+                android:paddingRight="@dimen/my10dp"
+                android:paddingTop="@dimen/my3dp"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/my17sp" />
+
+            <RatingBar
+                android:id="@+id/food_ratingbar"
+                style="@style/food_RatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_vertical"
+                android:numStars="5"
+                android:rating="5"
+                android:stepSize="1"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my1dp"
+        android:background="@color/topic_item_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/food_remark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="top"
+            android:hint="宝贝满足你的期待吗？发表下你的看法吧"
+            android:lines="4"
+            android:maxLength="50"
+            android:maxLines="6"
+            android:padding="@dimen/my5dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/my14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <cn.bingoogolapple.photopicker.widget.BGASortableNinePhotoLayout
+                android:id="@+id/phone_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                app:bga_snpl_deleteDrawable="@mipmap/bga_pp_ic_delete"
+                app:bga_snpl_deleteDrawableOverlapQuarter="false"
+                app:bga_snpl_editable="true"
+                app:bga_snpl_itemCornerRadius="0dp"
+                app:bga_snpl_itemSpanCount="5"
+                app:bga_snpl_itemWhiteSpacing="10dp"
+                app:bga_snpl_itemWidth="0dp"
+                app:bga_snpl_maxItemCount="9"
+                app:bga_snpl_otherWhiteSpacing="0dp"
+                app:bga_snpl_placeholderDrawable="@mipmap/bga_pp_ic_holder_dark"
+                app:bga_snpl_plusDrawable="@drawable/house_add"
+                app:bga_snpl_plusEnable="true"
+                app:bga_snpl_sortable="true" />
+        </LinearLayout>
+
+        <LinearLayout android:visibility="gone"
+            android:id="@+id/choise_anonymous"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="@dimen/my1dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="6dp">
+
+            <ImageView
+                android:id="@+id/comment_anonymous"
+                android:layout_width="@dimen/my25dp"
+                android:layout_height="@dimen/my25dp"
+                android:padding="@dimen/my5dp"
+                android:src="@drawable/check_normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="匿名评价" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

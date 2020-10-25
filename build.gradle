@@ -1,0 +1,90 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+apply from: "config.gradle"
+buildscript {
+    repositories {
+        maven { url 'https://dl.bintray.com/umsdk/release' }
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
+        maven { url 'https://dl.bintray.com/umsdk/release' }
+
+//        mavenCentral()
+//        google()
+//        jcenter()
+//        maven { url "https://dl.bintray.com/tencentqcloudterminal/maven" }
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.5.3'
+        classpath 'com.jakewharton:butterknife-gradle-plugin:9.0.0'
+
+        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.0'
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.4.1'
+        //为了持续跟踪和优化 SDK 的质量，给您带来更好的使用体验，我们在 SDK 中引入了腾讯移动分析（mta），若是想关闭该功能，则在应用的根目录下的 build.gradle 中添加依赖：
+//        compile ('com.tencent.qcloud:cosxml:5.4.30'){
+//            exclude group:'com.tencent.qcloud', module: 'mtaUtils' //关闭 mta 上报功能
+//        }
+    }
+}
+
+allprojects {
+    repositories {
+        maven { url 'https://dl.bintray.com/umsdk/release' }
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
+        maven { url "https://jitpack.io" }
+        maven { url 'https://dl.bintray.com/umsdk/release' }
+        flatDir {
+            dirs 'src/main/jniLibs'
+            dirs project(':app').file('libs')
+        }
+//        mavenCentral()
+//        google()
+//        jcenter()
+//        maven {
+//            url "https://maven.google.com"
+//        }
+//        maven {
+//            url "https://dl.bintray.com/tencentqcloudterminal/maven"
+//        }
+//        maven { url "https://jitpack.io" }
+//
+//        flatDir {
+//            dirs 'libs'
+//        }
+//
+//        maven {url 'https://dl.bintray.com/jetbrains/anko'}
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    compileSdkVersion = 27
+    buildToolsVersion = "28.0.3"
+    supportSdkVersion = "25.4.0"
+    minSdkVersion = 19
+    targetSdkVersion = 27
+    versionCode = 1
+    versionName = "v1.0"
+    proguard = true
+    rootPrj = "$projectDir/.."
+    ndkAbi = 'armeabi-v7a'
+    noffmpeg = false
+    noijkplay = false
+    aekit_version = '1.0.19-cloud'
+    liteavSdk="com.tencent.liteav:LiteAVSDK_Professional:latest.release"
+
+    dependencies = [
+            "appcompat-v7"    : "com.android.support:appcompat-v7:27.0.0",
+            "recyclerview-v7" : 'com.android.support:recyclerview-v7:27.0.0',
+            "design"          : 'com.android.support:design:27.0.0',
+            "roundedimageview": 'com.makeramen:roundedimageview:2.3.0', //带圆角，边框的的ImageView
+            "cardview-v7"     : 'com.android.support:cardview-v7:27.0.0'
+    ]
+}

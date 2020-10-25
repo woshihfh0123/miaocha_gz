@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="250dp">
+
+    <com.mc.phonelive.custom.FrameImageView
+        android:id="@+id/frame_img"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY"
+        app:fiv_ratio="0.213" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/progressbarcard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:visibility="invisible"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="0dp">
+
+        <com.mc.phonelive.custom.PkProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="match_parent"
+            android:layout_height="27dp"
+            android:layout_alignParentBottom="true"
+            app:ppb_left_color="@color/pk_red"
+            app:ppb_minWidth="75dp"
+            app:ppb_rate="0.5"
+            app:ppb_right_color="@color/pk_blue" />
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/left"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/pk_left"
+            android:drawableLeft="@mipmap/pk_start_img"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:textColor="#FEDB50"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/right"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/pk_right"
+            android:drawableRight="@mipmap/pk_start_img"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical|right"
+            android:paddingRight="5dp"
+            android:textColor="#FEDB50"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_above="@id/bottom"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/bg_live_pk_time"
+        android:gravity="center"
+        android:textColor="@color/redlive"
+        android:textSize="12sp"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/result"
+        android:layout_width="70dp"
+        android:layout_height="41dp"
+        android:layout_centerInParent="true" />
+
+    <com.mc.phonelive.custom.ProgressTextView2
+        android:id="@+id/pk_wait_progress"
+        android:layout_width="70dp"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="10"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:ptv2_bg_color="@color/pk_blue"
+        app:ptv2_fg_color="@color/pk_red"
+        app:ptv2_progress="10"
+        app:ptv2_stroke_width="6dp" />
+
+</RelativeLayout>
